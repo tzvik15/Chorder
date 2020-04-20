@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Chorder/static/css/main.e65bd6fe.chunk.css",
+    "main.js": "/Chorder/static/js/main.a0e5c0ab.chunk.js",
+    "main.js.map": "/Chorder/static/js/main.a0e5c0ab.chunk.js.map",
+    "runtime-main.js": "/Chorder/static/js/runtime-main.2242480a.js",
+    "runtime-main.js.map": "/Chorder/static/js/runtime-main.2242480a.js.map",
+    "static/js/2.3ecf904f.chunk.js": "/Chorder/static/js/2.3ecf904f.chunk.js",
+    "static/js/2.3ecf904f.chunk.js.map": "/Chorder/static/js/2.3ecf904f.chunk.js.map",
+    "static/js/3.e832cb5b.chunk.js": "/Chorder/static/js/3.e832cb5b.chunk.js",
+    "static/js/3.e832cb5b.chunk.js.map": "/Chorder/static/js/3.e832cb5b.chunk.js.map",
+    "index.html": "/Chorder/index.html",
+    "precache-manifest.22c07975b10bac173e874ebf99cf0116.js": "/Chorder/precache-manifest.22c07975b10bac173e874ebf99cf0116.js",
+    "service-worker.js": "/Chorder/service-worker.js",
+    "static/css/main.e65bd6fe.chunk.css.map": "/Chorder/static/css/main.e65bd6fe.chunk.css.map",
+    "static/js/2.3ecf904f.chunk.js.LICENSE.txt": "/Chorder/static/js/2.3ecf904f.chunk.js.LICENSE.txt",
+    "static/js/3.e832cb5b.chunk.js.LICENSE.txt": "/Chorder/static/js/3.e832cb5b.chunk.js.LICENSE.txt",
+    "static/media/M.wav": "/Chorder/static/media/M.2c4cd508.wav",
+    "static/media/M46.wav": "/Chorder/static/media/M46.ad79ffc5.wav",
+    "static/media/M6.wav": "/Chorder/static/media/M6.1a36f7ea.wav",
+    "static/media/aug46.wav": "/Chorder/static/media/aug46.38e8e9dc.wav",
+    "static/media/aug6.wav": "/Chorder/static/media/aug6.c374c030.wav",
+    "static/media/aug_tri.wav": "/Chorder/static/media/aug_tri.d93ec4a0.wav",
+    "static/media/dim46.wav": "/Chorder/static/media/dim46.9e0b5f79.wav",
+    "static/media/dim6.wav": "/Chorder/static/media/dim6.e1014b21.wav",
+    "static/media/dim_tri.wav": "/Chorder/static/media/dim_tri.1c8aed65.wav",
+    "static/media/min46.wav": "/Chorder/static/media/min46.eb71676c.wav",
+    "static/media/min6.wav": "/Chorder/static/media/min6.05e3d11d.wav",
+    "static/media/minor.wav": "/Chorder/static/media/minor.71d58820.wav"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2242480a.js",
+    "static/js/2.3ecf904f.chunk.js",
+    "static/css/main.e65bd6fe.chunk.css",
+    "static/js/main.a0e5c0ab.chunk.js"
+  ]
+}
