@@ -7,6 +7,18 @@ import audio1 from "../../assets/sounds/M.wav";
 import audio2 from "../../assets/sounds/minor.wav";
 import audio3 from "../../assets/sounds/dim_tri.wav";
 import audio4 from "../../assets/sounds/aug_tri.wav";
+import audio5 from "../../assets/sounds/M6.wav";
+import audio6 from "../../assets/sounds/M46.wav";
+import audio7 from "../../assets/sounds/min6.wav";
+import audio8 from "../../assets/sounds/min46.wav";
+import audio9 from "../../assets/sounds/dim6.wav";
+import audio10 from "../../assets/sounds/dim46.wav";
+import audio11 from "../../assets/sounds/aug6.wav";
+import audio12 from "../../assets/sounds/aug46.wav";
+
+
+import root from "../../assets/images/3-5.png"
+import quart from "../../assets/images/4-6.png"
 
 
 
@@ -21,6 +33,14 @@ const Learn =()=> {
     const [playmin] = useSound(audio2);
     const [playDim] = useSound(audio3);
     const [playAug] = useSound(audio4);
+    const [playM6] = useSound(audio5);
+    const [playmin6] = useSound(audio7);
+    const [playDim6] = useSound(audio9);
+    const [playAug6] = useSound(audio11);
+    const [playM46] = useSound(audio6);
+    const [playmin46] = useSound(audio8);
+    const [playDim46] = useSound(audio10);
+    const [playAug46] = useSound(audio12);
 
 
     const [buttons, setButtons] = useState({
@@ -88,13 +108,33 @@ const Learn =()=> {
         buttons.q1===true && buttons.triads===false && buttons.septa===true && buttons.inversions===true?
         <>
         <h2>septa inversions</h2>
+        <p>The idea behind inversions is that the chords (triads, septachords, etc.) sound differently if the order of notes is changed.</p>
         <button onClick={tri}>Triads</button>
         <button> <Link to="/">HOME!</Link></button>
         </>
         :
         buttons.q1===true && buttons.triads===true && buttons.septa===false && buttons.inversions===true?
         <>
-        <h2>triad inversions</h2>
+        <h2>Triad Inversions</h2>
+        <p>The idea behind inversions is that the chords (triads, septachords, etc.) sound differently if the order of notes is changed.</p>
+        <p>As a triad has three (3) notes, there are three ways in which they can be ordered. The base position (sometimes referred to as "root" position, or not given a name (for example when you encounter the term "major triad/chord" it means base form)), 1st inversion (where the base note is moved to the top of the chord, so the 2nd note of the original triad is now the bottom note of the chord), and 2nd inversion (where the two bottom notes are moved, to the top of the chord, so the new bottom note is now the note that was the top note in the root position) </p>
+        <p>Root position triads are spelled eithr just with the base name ("M", "m", etc.), or with the numbers <img src={root} alt="3-5" className="numberPic"/> next to the base name (this is rarely done).
+            1st inversions are sometimes called "sextachords", and are spelled with the number "6" next to their name (M6, m6, etc.). 2nd inversions are sometimes called "quart-sextachords", and are spelled with the numbers <img src={quart} alt="4-6" className="numberPic"/> attached to the name. The numbering of the inversions (both in writing and in name) are referrences to the intervalic content of the chord, in relation to the lowest note. So, in a sextachord, we have a sixth interval from the lowest to the highest note, and a quart-sextachord has both a fourth and a sixth intervals from the lowest note.</p>
+            <p>Each one of the inverted chords has a different sound. To listen to the different inversions, press the buttons below.</p>
+            <div className="sounds">
+            <button onClick={playMaj}>Major (M)</button>
+            <button onClick={playmin}>Minor (m)</button>
+            <button onClick={playAug}>Augmented (Aug)</button>
+            <button onClick={playDim}>Diminished (Dim)</button>
+            <button onClick={playM6}>Major triad, 1st inversion (M6)</button>
+            <button onClick={playmin6}>Minor triad, 1st inversion(m6)</button>
+            <button onClick={playAug6}>Augmented triad, 1st inversion(Aug6)</button>
+            <button onClick={playDim6}>Diminished triad, 1st inversion(Dim6)</button>
+            <button onClick={playM46}>Major triad, 2nd inversion (M46)</button>
+            <button onClick={playmin46}>Minor triad, 2nd inversion (m46)</button>
+            <button onClick={playAug46}>Augmented triad, 2nd inversion (Aug46)</button>
+            <button onClick={playDim46}>Diminished triad, 2nd inversion (Dim46)</button>
+        </div>
         <button onClick={sept}>Septachords</button>
         <button> <Link to="/">HOME!</Link></button>
         </>
