@@ -1,0 +1,35 @@
+body {
+	text-align: center;
+	background-image: url('/assets/images/notes.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/* background-size: inherit; */
+	background-size: 1600px 770px;
+	/* min-width: 100%;
+    min-height: 100%; */
+	text-align: center;
+	background-color: rgb(153, 149, 149);
+}
+
+.hAndW {
+	color: rgb(245, 238, 241);
+	font-size: 70px;
+	-webkit-text-stroke-width: 4px;
+	-webkit-text-stroke-color: rgb(22, 227, 241);
+}
+
+.btn,
+.btnP {
+	color: rgb(248, 246, 247);
+	font-size: 20px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: rgb(88, 7, 121);
+	margin-right: 15px;
+}
+
+.p {
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 25px;
+	color: blanchedalmond;
+}
