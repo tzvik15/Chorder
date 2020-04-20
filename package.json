@@ -2,6 +2,7 @@
   "name": "chorder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tzvik15.github.io/Chorder/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
