@@ -15,6 +15,12 @@ import audio9 from "../../assets/sounds/dim6.wav";
 import audio10 from "../../assets/sounds/dim46.wav";
 import audio11 from "../../assets/sounds/aug6.wav";
 import audio12 from "../../assets/sounds/aug46.wav";
+import audio13 from "../../assets/sounds/MM7.wav";
+import audio14 from "../../assets/sounds/Min7.wav";
+import audio15 from "../../assets/sounds/minmin7.wav";
+import audio16 from "../../assets/sounds/hdim.wav";
+import audio17 from "../../assets/sounds/fulldim.wav";
+
 
 
 import root from "../../assets/images/3-5.png"
@@ -41,6 +47,11 @@ const Learn =()=> {
     const [playmin46] = useSound(audio8);
     const [playDim46] = useSound(audio10);
     const [playAug46] = useSound(audio12);
+    const [playMM] = useSound(audio13);
+    const [playMm] = useSound(audio14);
+    const [playmm] = useSound(audio15);
+    const [playhdim] = useSound(audio16);
+    const [playdimdim] = useSound(audio17);
 
 
     const [buttons, setButtons] = useState({
@@ -92,7 +103,7 @@ const Learn =()=> {
         <br></br>That means that the interval content of a triad can be one of these 4 options: MM, Mm, mM, mm. Each of those permutations has a name in music theory: Mm: a Major chord, mM: a Minor chord, MM: an Augmented chord, mm: a Diminished chord. All of these names also have an accepted shorthand: Major: M, Minor: m, Augmented: Aug. (or +) , Diminished: Dim. (or o)</p>
         <p className ="info">An interesting by-product of how triads are created, by stacking 2 thirds, there is also a fifth interval created - from the lowest to the highest note. In M and m chords, the fifth is perfect. <br></br>
         In Dim chords the fifth is diminished (also known as a "tritone"), and in Aug chords the fifth is augmented. This fifth interval helps create the unique sound of each of the triads. For an example of how each of the 4 triads sounds, click the buttons below.</p>
->>>>>>> 51bbf85028658411d14a334bca9496d5e77929d4
+
         <div className="sounds">
             <button className ="btn-hover color-1" onClick={playMaj}>Major (M)</button>
             <button className ="btn-hover color-3 " onClick={playmin}>Minor (m)</button>
@@ -106,7 +117,29 @@ const Learn =()=> {
         :
         buttons.q1===true && buttons.triads===false && buttons.septa===true && buttons.inversions===false?
         <>
-        <h2 className ="title">septa stuff</h2>
+        <h2 className ="title">Septachords</h2>
+        <p>The name "septachords" comes from the word "septa", meaning seven. Septachords are identical to triads in how they operate, except that instead of three notes (two (2) third intervals stacked), they contain a fourth note that is a seventh distance (interval) from the root note - hence the name. </p>
+        <p>Septachords are based on the four (4) triad types: Major, Minor, Augmented, Diminished. Each of these chords can have either a major, or minor, or sometimes diminished 7th interval added to them. </p>
+        <p>At this point, it's important to point out that while there are many theoretical seventh chords, in Western Classical Music Common Practice Period (the time span roughly 1600-1910, from which we derive most of our music theory practices), several of those chords are not present. While they DO exist theoretically, and are used in other styles of music (jazz for example), this application will only discuss the chords we commonly use.</p>
+        <h4>Major triad septachords</h4>
+        <p>There are 2 types of septachords commonly used that are based on a major triad. They are created by adding a major or minor seventh to the major chord. This resulting septachords are named "Major Major", and "Major Minor" respectively. On a root note of "C", they would look like this: C-E-G-B (Major Major), C-E-G-Bb (major minor). </p>
+        <p>The Major Major chord is sometimes just called a Major 7th chord. It can by spelled either XM7 (CM7, DbM7, G#M7, etc.), or XMM (CMM, DbMM, G#MM, etc.) Sometimes, instead of the "M", the chord is spelled with a triangle: X∆7 (C∆7, Db∆7, G#∆7, etc.) </p>
+        <p>The Major Minor chord is sometimes called a Dominant Seventh chord. It is comprised of a major triad and a minor seventh, so on a root note of C it will have the following notes: C-E-G-Bb. It can be spelled either XMm7 (CMm7, DbMm7, G#Mm7, etc.), or just X7 (C7, Db7, G#7, etc.)</p>
+        <h4>Minor triad septachords</h4>
+        <p>While the exact same theoretical logic guiding the creation of the major triad septachords holds true for minor triads, in Western Classical Music we only use one minor septachord: the Minor Minor seventh chord. This septachords is comprised of a minor triad, and a minor seventh interval from the root note. On a root note of C, it will look like this: C-Eb-G-Bb.This type of septachord is sometimes called Minor Seventh. It is labelled Xm7 (Cm7, Dbm7, G#m7, etc.), or sometimes X-7 (C-7, Db-7, G#-7, etc.)</p>
+        <h4>Diminished triad septachords</h4>
+        <p>There are two (2) types of diminished septachords we use in Western Classical Music based on the diminished triad. The first septachord is called a Half Diminished chord, and is comprised of a diminished triad with a minor seventh added. From a root note of C: C-Eb-Gb-Bb. This chord is sometimes called a Minor Seventh Flat (b) Five chord, and is spelled Xø7 (Cø7, Dbø7, G#ø7, etc.), or sometimes X-7b5 (C-7b5, Db-7b5, G#-7b5, etc.)</p>
+        <p>The other chord based on a diminished triad has a DIMINISHED seventh interval added to it. On a root of C, it is spelled: C-Eb-Gb-Bbb, and is called a Fully Diminished chord, or sometimes a diminished seventh chord. It is spelled Xo7 (Co7, Dbo7, G#o7, etc.), or Xdim7 (Cdim7, Dbdim7, G#dim7, etc.).</p>
+        <br></br>
+        <p>In the Common Practice Period, we don't use seventh chords based on an augmented triad, though they do exist in other music styles and in theoretical work.</p>
+        <p>Click the buttons below to listen to the various septachords.</p>
+        <div className="sounds">
+            <button onClick={playMM}>MM</button>
+            <button onClick={playMm}>Mm</button>
+            <button onClick={playmm}>mm</button>
+            <button onClick={playhdim}>ø7</button>
+            <button onClick={playdimdim}>o7</button>
+        </div>  
         <button className ="btn-hover colorInver " onClick={inv}>Inversions</button>
         <button className ="btn-hover colorTriads" onClick={tri}>Triads</button>
         <button className ="btn-hover colorHome " > <Link to="/">HOME!</Link></button>
