@@ -7,11 +7,11 @@ body {
 	/* background-size: inherit; */
 	/* background-size: 1600px 770px; */
 	text-align: center;
-	background-color: rgb(153, 149, 149);
+	background-color: rgb(134, 131, 131);
 }
 
 .hAndW {
-	color: rgb(245, 238, 241);
+	color: rgb(255, 255, 255);
 	font-size: 70px;
 	-webkit-text-stroke-width: 4px;
 	-webkit-text-stroke-color: rgb(22, 227, 241);
@@ -20,7 +20,7 @@ body {
 .p {
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 25px;
-	color: blanchedalmond;
+	color: rgb(255, 255, 255);
 }
 
 .button{
