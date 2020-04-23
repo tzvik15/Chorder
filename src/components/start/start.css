@@ -1,17 +1,18 @@
 body {
 	text-align: center;
-	background-image: url('../../assets/images/notes.gif');
+	background-image: url('../../assets/images/rainNotes.gif');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	/* background-size: inherit; */
-	/* background-size: 1600px 770px; */
+	background-size: 1600px 770px;
 	text-align: center;
 	background-color: rgb(134, 131, 131);
 }
 
 .hAndW {
-	color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color: black;
 	font-size: 70px;
 	-webkit-text-stroke-width: 4px;
 	-webkit-text-stroke-color: rgb(22, 227, 241);
@@ -20,7 +21,8 @@ body {
 .p {
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 25px;
-	color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255);*/
+      color: black; 
 }
 
 .button{
