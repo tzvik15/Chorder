@@ -20,11 +20,30 @@ import audio14 from "../../assets/sounds/Min7.wav";
 import audio15 from "../../assets/sounds/minmin7.wav";
 import audio16 from "../../assets/sounds/hdim.wav";
 import audio17 from "../../assets/sounds/fulldim.wav";
+import audio18 from "../../assets/sounds/dom56.wav";
+import audio19 from "../../assets/sounds/dom34.wav";
+import audio20 from "../../assets/sounds/dom2.wav";
+import audio21 from "../../assets/sounds/MM56.wav";
+import audio22 from "../../assets/sounds/MM34.wav";
+import audio23 from "../../assets/sounds/MM2.wav";
+import audio24 from "../../assets/sounds/minmin56.wav";
+import audio25 from "../../assets/sounds/minmin34.wav";
+import audio26 from "../../assets/sounds/minmin2.wav";
+import audio27 from "../../assets/sounds/hdim56.wav";
+import audio28 from "../../assets/sounds/hdim34.wav";
+import audio29 from "../../assets/sounds/hdim2.wav";
+import audio30 from "../../assets/sounds/dim56.wav";
+import audio31 from "../../assets/sounds/dim34.wav";
+import audio32 from "../../assets/sounds/dim2.wav";
 
 
 
 import root from "../../assets/images/3-5.png"
 import quart from "../../assets/images/4-6.png"
+import seven from "../../assets/images/7.jpg"
+import sixFive from "../../assets/images/5-6.jpg"
+import threeFour from "../../assets/images/3-4.jpg"
+import two from "../../assets/images/4-2.jpg"
 
 
 
@@ -52,6 +71,22 @@ const Learn =()=> {
     const [playmm] = useSound(audio15);
     const [playhdim] = useSound(audio16);
     const [playdimdim] = useSound(audio17);
+
+    const [playMm56] = useSound(audio18);
+    const [playMm34] = useSound(audio19);
+    const [playMm2] = useSound(audio20);
+    const [playMM56] = useSound(audio21);
+    const [playMM34] = useSound(audio22);
+    const [playMM2] = useSound(audio23);
+    const [playMin56] = useSound(audio24);
+    const [playMin34] = useSound(audio25);
+    const [playMin2] = useSound(audio26);
+    const [playhdim56] = useSound(audio27);
+    const [playhdim34] = useSound(audio28);
+    const [playhdim2] = useSound(audio29);
+    const [playDim56] = useSound(audio30);
+    const [playDim34] = useSound(audio31);
+    const [playDim2] = useSound(audio32);
 
 
     const [buttons, setButtons] = useState({
@@ -82,8 +117,8 @@ const Learn =()=> {
         buttons.q1===false?
         <>
         <p className ="info" >
-            Chords, in the most basic form, are groups of 3 or more notes, where the distance between the notes is that of a (major or minor) third. For the most part, in Western Classical Music, chords are comprised of either 3 or 4 notes, and follow several rules (explained in detail ahead). <br></br>
-            Chords can appear either simultaneously (all the notes together), or one note following the other. When chords appear in the staggared form, they are known as "Arpeggios". Chords can appear in any note order. When the chord appears in an order other than its base position (stacked thirds), it is known as an "inversion".
+            Chords are groups of 3 or more notes appearing simultaneously, or one after the other. When the notes appear one after the other, we call it an "arppegio". The most common types of chords in Western Classical Music are triads and septachords. These are chords that are constructed by notes where the distance between the notes is that of a (major or minor) third. A triad consists of 3 notes (so two (2) third intervals), while a septachord consists of 4 notes (so three (3) third intervals). <br></br>
+            Chords can appear in any note order. When the chord appears in an order other than its base position (stacked thirds), it is known as an "inversion".
         </p>
         <h3 className ="title">What would you like to learn about?</h3>
         <button className ="btn-hover colorTriads" onClick={tri}>3-note chords ("Triads")</button>
@@ -148,7 +183,38 @@ const Learn =()=> {
         buttons.q1===true && buttons.triads===false && buttons.septa===true && buttons.inversions===true?
         <>
         <h2 className ="title">septa inversions</h2>
-        <p className ="info">The idea behind inversions is that the chords (triads, septachords, etc.) sound differently if the order of notes is changed.</p>
+        <p className ="info">Inversions of septachords are identical in thoery to triad inversions: you take he basic chord, and change which of the notes is on the bottom. Just like triads, septachords are denoted with numbers by the name of the chord. Important to note that all of the septachords can be inverted.</p>
+        <p>When the septachord appears with the root note in the lowest voice, it is called "root position". While technically not an inversion (as this is the natural way for the chord to appear), it is denoted with the number "7" next to the name of the chord (Major-Major7, minor-minor7, fully diminished7, etc.)</p>
+        <p>The first inversion of a septachord is named "quint-sext". In this inversion we take the root note and move it up, so the second note becomes the bottom (C-E-G-B ----> E-G-B-C). Note that inverting a septachord (any inversion) creates a (major/minor) second interval somewhere in the chord. The name of the inversion marks that second interval in relation to the lowest note of the inversion - so in the case of a quint-sextachord, the pair of notes creating the second interval are a fifth and a sixth (5,6) interval from the bass note.</p>
+        <p>The second inversion of a septachord is named "terz-quart". In this inversion, the bottom note of the chord is the third note of the root position, or the fifth. (C-E-G-B ---> G-B-C-E)</p>
+        <p>The third inversion of a septachord is named "secoond". In this inversion, the bottom note of the chord is the 4th note in the root position, or the seventh. (C-E-G-B ---> B-C-E-G)</p>
+        <p>While all the inversions have a latin name (quint-sext, etc.), it is completely acceptable to call them by their inversion number, for example C Major Major, 2nd inversion, etc.)</p>
+        <h4>Important to note: when determining the type of inversion, only the bottom note counts - the other notes can appear in any order, with doubling or omitting of notes. This has no bearing on the type of chord and inversion number.</h4>
+        <p>The inversions are spelled with numbers by the name of the chord. Root position: <img src={seven} alt="7" className="numberPic"/>, 1st inversion: <img src={sixFive} alt="6-5" className="numberPic"/>, 2nd inversion: <img src={threeFour} alt="3-4" className="numberPic"/>, and 3rd inversion: <img src={two} alt="2" className="numberPic"/> Note that when spelling a third inversion, sometimes the number "4" is omitted, and only the "2" appears. </p>
+        <p>Click the buttons below to listen to the various septachords and inversions.</p>
+        <div className="sounds">
+            <button onClick={playMM}>MM7</button>
+            <button onClick={playMM56}>MM56</button>
+            <button onClick={playMM34}>MM34</button>
+            <button onClick={playMM2}>MM2</button>
+            <button onClick={playMm}>Mm</button>
+            <button onClick={playMm56}>Mm56</button>
+            <button onClick={playMm34}>Mm34</button>
+            <button onClick={playMm2}>Mm2</button>
+            <button onClick={playmm}>mm</button>
+            <button onClick={playMin56}>mm56</button>
+            <button onClick={playMin34}>mm34</button>
+            <button onClick={playMin2}>mm2</button>
+            <button onClick={playhdim}>ø7</button>
+            <button onClick={playhdim56}>ø56</button>
+            <button onClick={playhdim34}>ø34</button>
+            <button onClick={playhdim2}>ø2</button>
+            <button onClick={playdimdim}>o7</button>
+            <button onClick={playDim56}>o56</button>
+            <button onClick={playDim34}>o34</button>
+            <button onClick={playDim2}>o2</button>
+            
+        </div> 
         <button className ="btn-hover colorTriads" onClick={tri}>Triads</button>
         <button className ="btn-hover colorHome  " > <Link to="/">HOME!</Link></button>
         </>
@@ -158,12 +224,13 @@ const Learn =()=> {
         <h2 className ="title">Triad Inversions</h2>
         <p className ="info">The idea behind inversions is that the chords (triads, septachords, etc.) sound differently if the order of notes is changed.</p>
         <p className ="info">As a triad has three (3) notes, there are three ways in which they can be ordered. The base position (sometimes referred to as "root" position, or not given a name (for example when you encounter the term "major triad/chord" it means base form)).<br></br>
-         1st inversion (where the base note is moved to the top of the chord, so the 2nd note of the original triad is now the bottom note of the chord), and 2nd inversion (where the two bottom notes are moved, to the top of the chord, so the new bottom note is now the note that was the top note in the root position) </p>
+         1st inversion (where the base note is moved to a higher position in the note order, so the 2nd note of the original triad, the "third" of the chord, is now the bottom note of the chord), and 2nd inversion (where the two bottom notes are moved, to higher positions in the chord, so the new bottom note is now the note that was the top note in the root position, or the "fifth" of the chord.) </p>
          <br></br>
         <p className ="info">Root position triads are spelled eithr just with the base name ("M", "m", etc.), or with the numbers <img src={root} alt="3-5" className="numberPic"/> next to the base name (this is rarely done).
             1st inversions are sometimes called "sextachords", and are spelled with the number "6" next to their name (M6, m6, etc.). <br></br>
             2nd inversions are sometimes called "quart-sextachords", and are spelled with the numbers <img src={quart} alt="4-6" className="numberPic"/> attached to the name. The numbering of the inversions (both in writing and in name) are referrences to the intervalic content of the chord, in relation to the lowest note. <br></br>
              So, in a sextachord, we have a sixth interval from the lowest to the highest note, and a quart-sextachord has both a fourth and a sixth intervals from the lowest note.</p>
+             <h4>Important to note: the type of inversion is dictated by the note in the bottom of the chord. If it is the root note, the chord is in root position. If it is the third, then the chord is a 1st inversion, and if it's the fifth, the chord is a 2nd inversion. The order and number of apperances of subsequant notes has no bearing on this.</h4>
             <p className ="info">Each one of the inverted chords has a different sound. To listen to the different inversions, press the buttons below.</p>
             <div className="sounds">
 
