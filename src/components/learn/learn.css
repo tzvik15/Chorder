@@ -6,14 +6,20 @@
 .info {
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 35px;
-    /* color: rgb(255, 255, 255); */
-    color: black;
+    color: white;
     
 }
 
+.info1 {
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 35px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: rgb(241, 22, 168);
+    
+}
 .title{
-    /* color: rgb(245, 238, 241); */
-    color: black;
+    color: rgb(2, 2, 2);
 	font-size: 40px;
 	-webkit-text-stroke-width: 2.5px;
 	-webkit-text-stroke-color: rgb(22, 227, 241);
@@ -48,6 +54,7 @@
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    position: relative;
 }
 
 .btn-hover:hover {

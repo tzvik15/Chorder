@@ -21,8 +21,8 @@ body {
 .p {
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 25px;
-    /* color: rgb(255, 255, 255);*/
-      color: black; 
+    
+      color: rgb(250, 250, 250); 
 }
 
 .button{
@@ -51,6 +51,7 @@ body {
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    flexDirection: 'row'
 }
 
 .btn-hover:hover {

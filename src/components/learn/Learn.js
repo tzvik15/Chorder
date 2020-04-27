@@ -156,13 +156,13 @@ const Learn =()=> {
         <p className ="info">The name "septachords" comes from the word "septa", meaning seven. Septachords are identical to triads in how they operate, except that instead of three notes (two (2) third intervals stacked), they contain a fourth note that is a seventh distance (interval) from the root note - hence the name. </p>
         <p className ="info">Septachords are based on the four (4) triad types: Major, Minor, Augmented, Diminished. Each of these chords can have either a major, or minor, or sometimes diminished 7th interval added to them. </p>
         <p className ="info">At this point, it's important to point out that while there are many theoretical seventh chords, in Western Classical Music Common Practice Period (the time span roughly 1600-1910, from which we derive most of our music theory practices), several of those chords are not present. While they DO exist theoretically, and are used in other styles of music (jazz for example), this application will only discuss the chords we commonly use.</p>
-        <h4 className ="title">Major triad septachords</h4>
+        <h4 className ="title">Major Triad Septachords</h4>
         <p className ="info">There are 2 types of septachords commonly used that are based on a major triad. They are created by adding a major or minor seventh to the major chord. This resulting septachords are named "Major Major", and "Major Minor" respectively. On a root note of "C", they would look like this: C-E-G-B (Major Major), C-E-G-Bb (major minor). </p>
         <p className ="info">The Major Major chord is sometimes just called a Major 7th chord. It can by spelled either XM7 (CM7, DbM7, G#M7, etc.), or XMM (CMM, DbMM, G#MM, etc.) Sometimes, instead of the "M", the chord is spelled with a triangle: X∆7 (C∆7, Db∆7, G#∆7, etc.) </p>
         <p className ="info">The Major Minor chord is sometimes called a Dominant Seventh chord. It is comprised of a major triad and a minor seventh, so on a root note of C it will have the following notes: C-E-G-Bb. It can be spelled either XMm7 (CMm7, DbMm7, G#Mm7, etc.), or just X7 (C7, Db7, G#7, etc.)</p>
-        <h4 className ="title">Minor triad septachords</h4>
+        <h4 className ="title">Minor Triad Septachords</h4>
         <p className ="info">While the exact same theoretical logic guiding the creation of the major triad septachords holds true for minor triads, in Western Classical Music we only use one minor septachord: the Minor Minor seventh chord. This septachords is comprised of a minor triad, and a minor seventh interval from the root note. On a root note of C, it will look like this: C-Eb-G-Bb.This type of septachord is sometimes called Minor Seventh. It is labelled Xm7 (Cm7, Dbm7, G#m7, etc.), or sometimes X-7 (C-7, Db-7, G#-7, etc.)</p>
-        <h4 className ="title">Diminished triad septachords</h4>
+        <h4 className ="title">Diminished Triad Septachords</h4>
         <p className ="info">There are two (2) types of diminished septachords we use in Western Classical Music based on the diminished triad. The first septachord is called a Half Diminished chord, and is comprised of a diminished triad with a minor seventh added. From a root note of C: C-Eb-Gb-Bb. This chord is sometimes called a Minor Seventh Flat (b) Five chord, and is spelled Xø7 (Cø7, Dbø7, G#ø7, etc.), or sometimes X-7b5 (C-7b5, Db-7b5, G#-7b5, etc.)</p>
         <p className ="info">The other chord based on a diminished triad has a DIMINISHED seventh interval added to it. On a root of C, it is spelled: C-Eb-Gb-Bbb, and is called a Fully Diminished chord, or sometimes a diminished seventh chord. It is spelled Xo7 (Co7, Dbo7, G#o7, etc.), or Xdim7 (Cdim7, Dbdim7, G#dim7, etc.).</p>
         <br></br>
@@ -182,37 +182,37 @@ const Learn =()=> {
         :
         buttons.q1===true && buttons.triads===false && buttons.septa===true && buttons.inversions===true?
         <>
-        <h2 className ="title">septa inversions</h2>
+        <h2 className ="title">Septa Inversions</h2>
         <p className ="info">Inversions of septachords are identical in thoery to triad inversions: you take he basic chord, and change which of the notes is on the bottom. Just like triads, septachords are denoted with numbers by the name of the chord. Important to note that all of the septachords can be inverted.</p>
-        <p>When the septachord appears with the root note in the lowest voice, it is called "root position". While technically not an inversion (as this is the natural way for the chord to appear), it is denoted with the number "7" next to the name of the chord (Major-Major7, minor-minor7, fully diminished7, etc.)</p>
-        <p>The first inversion of a septachord is named "quint-sext". In this inversion we take the root note and move it up, so the second note becomes the bottom (C-E-G-B ----> E-G-B-C). Note that inverting a septachord (any inversion) creates a (major/minor) second interval somewhere in the chord. The name of the inversion marks that second interval in relation to the lowest note of the inversion - so in the case of a quint-sextachord, the pair of notes creating the second interval are a fifth and a sixth (5,6) interval from the bass note.</p>
-        <p>The second inversion of a septachord is named "terz-quart". In this inversion, the bottom note of the chord is the third note of the root position, or the fifth. (C-E-G-B ---> G-B-C-E)</p>
-        <p>The third inversion of a septachord is named "secoond". In this inversion, the bottom note of the chord is the 4th note in the root position, or the seventh. (C-E-G-B ---> B-C-E-G)</p>
-        <p>While all the inversions have a latin name (quint-sext, etc.), it is completely acceptable to call them by their inversion number, for example C Major Major, 2nd inversion, etc.)</p>
-        <h4>Important to note: when determining the type of inversion, only the bottom note counts - the other notes can appear in any order, with doubling or omitting of notes. This has no bearing on the type of chord and inversion number.</h4>
-        <p>The inversions are spelled with numbers by the name of the chord. Root position: <img src={seven} alt="7" className="numberPic"/>, 1st inversion: <img src={sixFive} alt="6-5" className="numberPic"/>, 2nd inversion: <img src={threeFour} alt="3-4" className="numberPic"/>, and 3rd inversion: <img src={two} alt="2" className="numberPic"/> Note that when spelling a third inversion, sometimes the number "4" is omitted, and only the "2" appears. </p>
-        <p>Click the buttons below to listen to the various septachords and inversions.</p>
+        <p className ="info">When the septachord appears with the root note in the lowest voice, it is called "root position". While technically not an inversion (as this is the natural way for the chord to appear), it is denoted with the number "7" next to the name of the chord (Major-Major7, minor-minor7, fully diminished7, etc.)</p>
+        <p className ="info">The first inversion of a septachord is named "quint-sext". In this inversion we take the root note and move it up, so the second note becomes the bottom (C-E-G-B ----> E-G-B-C). Note that inverting a septachord (any inversion) creates a (major/minor) second interval somewhere in the chord. The name of the inversion marks that second interval in relation to the lowest note of the inversion - so in the case of a quint-sextachord, the pair of notes creating the second interval are a fifth and a sixth (5,6) interval from the bass note.</p>
+        <p className ="info">The second inversion of a septachord is named "terz-quart". In this inversion, the bottom note of the chord is the third note of the root position, or the fifth. (C-E-G-B ---> G-B-C-E)</p>
+        <p className ="info">The third inversion of a septachord is named "secoond". In this inversion, the bottom note of the chord is the 4th note in the root position, or the seventh. (C-E-G-B ---> B-C-E-G)</p>
+        <p className ="info">While all the inversions have a latin name (quint-sext, etc.), it is completely acceptable to call them by their inversion number, for example C Major Major, 2nd inversion, etc.)</p>
+        <h4 className ="info1">Important to note: when determining the type of inversion, only the bottom note counts - the other notes can appear in any order, with doubling or omitting of notes. This has no bearing on the type of chord and inversion number.</h4>
+        <p className ="info">The inversions are spelled with numbers by the name of the chord. Root position: <img src={seven} alt="7" className="numberPic"/>, 1st inversion: <img src={sixFive} alt="6-5" className="numberPic"/>, 2nd inversion: <img src={threeFour} alt="3-4" className="numberPic"/>, and 3rd inversion: <img src={two} alt="2" className="numberPic"/> Note that when spelling a third inversion, sometimes the number "4" is omitted, and only the "2" appears. </p>
+        <p className ="info">Click the buttons below to listen to the various septachords and inversions.</p>
         <div className="sounds">
-            <button onClick={playMM}>MM7</button>
-            <button onClick={playMM56}>MM56</button>
-            <button onClick={playMM34}>MM34</button>
-            <button onClick={playMM2}>MM2</button>
-            <button onClick={playMm}>Mm</button>
-            <button onClick={playMm56}>Mm56</button>
-            <button onClick={playMm34}>Mm34</button>
-            <button onClick={playMm2}>Mm2</button>
-            <button onClick={playmm}>mm</button>
-            <button onClick={playMin56}>mm56</button>
-            <button onClick={playMin34}>mm34</button>
-            <button onClick={playMin2}>mm2</button>
-            <button onClick={playhdim}>ø7</button>
-            <button onClick={playhdim56}>ø56</button>
-            <button onClick={playhdim34}>ø34</button>
-            <button onClick={playhdim2}>ø2</button>
-            <button onClick={playdimdim}>o7</button>
-            <button onClick={playDim56}>o56</button>
-            <button onClick={playDim34}>o34</button>
-            <button onClick={playDim2}>o2</button>
+            <button className ="btn-hover color-3" onClick={playMM}>MM7</button>
+            <button className ="btn-hover color-1" onClick={playMM56}>MM56</button>
+            <button className ="btn-hover color-3" onClick={playMM34}>MM34</button>
+            <button className ="btn-hover color-1" onClick={playMM2}>MM2</button>
+            <button className ="btn-hover color-3" onClick={playMm}>Mm</button>
+            <button className ="btn-hover color-1" onClick={playMm56}>Mm56</button>
+            <button className ="btn-hover color-3" onClick={playMm34}>Mm34</button>
+            <button className ="btn-hover color-1" onClick={playMm2}>Mm2</button>
+            <button className ="btn-hover color-3" onClick={playmm}>mm</button>
+            <button className ="btn-hover color-1" onClick={playMin56}>mm56</button>
+            <button className ="btn-hover color-3" onClick={playMin34}>mm34</button>
+            <button className ="btn-hover color-1" onClick={playMin2}>mm2</button>
+            <button className ="btn-hover color-3" onClick={playhdim}>ø7</button>
+            <button className ="btn-hover color-1" onClick={playhdim56}>ø56</button>
+            <button className ="btn-hover color-3" onClick={playhdim34}>ø34</button>
+            <button className ="btn-hover color-1" onClick={playhdim2}>ø2</button>
+            <button className ="btn-hover color-3" onClick={playdimdim}>o7</button>
+            <button className ="btn-hover color-1" onClick={playDim56}>o56</button>
+            <button className ="btn-hover color-3" onClick={playDim34}>o34</button>
+            <button className ="btn-hover color-1" onClick={playDim2}>o2</button>
             
         </div> 
         <button className ="btn-hover colorTriads" onClick={tri}>Triads</button>
@@ -230,7 +230,7 @@ const Learn =()=> {
             1st inversions are sometimes called "sextachords", and are spelled with the number "6" next to their name (M6, m6, etc.). <br></br>
             2nd inversions are sometimes called "quart-sextachords", and are spelled with the numbers <img src={quart} alt="4-6" className="numberPic"/> attached to the name. The numbering of the inversions (both in writing and in name) are referrences to the intervalic content of the chord, in relation to the lowest note. <br></br>
              So, in a sextachord, we have a sixth interval from the lowest to the highest note, and a quart-sextachord has both a fourth and a sixth intervals from the lowest note.</p>
-             <h4>Important to note: the type of inversion is dictated by the note in the bottom of the chord. If it is the root note, the chord is in root position. If it is the third, then the chord is a 1st inversion, and if it's the fifth, the chord is a 2nd inversion. The order and number of apperances of subsequant notes has no bearing on this.</h4>
+             <h4 className ="info1">Important to note: the type of inversion is dictated by the note in the bottom of the chord. If it is the root note, the chord is in root position. If it is the third, then the chord is a 1st inversion, and if it's the fifth, the chord is a 2nd inversion. The order and number of apperances of subsequant notes has no bearing on this.</h4>
             <p className ="info">Each one of the inverted chords has a different sound. To listen to the different inversions, press the buttons below.</p>
             <div className="sounds">
 
