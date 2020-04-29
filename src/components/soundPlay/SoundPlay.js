@@ -467,18 +467,61 @@ const SoundPlay = () => {
       </p>
       <button onClick={mRand.rand2}>SOUND</button>
       <h4>options</h4>
-      <button onClick={selected2}>Major - root position</button>
-      <button onClick={selected2}>Minor - root position</button>
-      <button onClick={selected2}>Diminished - root position</button>
-      <button onClick={selected2}>Augmented - root position</button>
-      <button onClick={selected2}>Major - 1st inversion(6)</button>
-      <button onClick={selected2}>Minor - 1st inversion(6)</button>
-      <button onClick={selected2}>Diminished - 1st inversion(6)</button>
-      <button onClick={selected2}>Augmented - 1st inversion(6)</button>
-      <button onClick={selected2}>Major - 2nd inversion(4/6)</button>
-      <button onClick={selected2}>Minor - 2nd inversion(4/6)</button>
-      <button onClick={selected2}>Diminished - 2nd inversion(4/6)</button>
-      <button onClick={selected2}>Augmented - 2nd inversion(4/6)</button>
+      <table>
+        <tr>
+          <th>Root position</th>
+          <th>1st inversion</th>
+          <th>2nd inversion</th>
+        </tr>
+        {/* group1 */}
+        <tr>
+          <td>
+            <button onClick={selected2}>Major - root position</button>
+          </td>
+          <td>
+            <button onClick={selected2}>Major - 1st inversion(6)</button>
+          </td>
+          <td>
+            <button onClick={selected2}>Major - 2nd inversion(4/6)</button>
+          </td>
+        </tr>
+        {/* group2 */}
+        <tr>
+          <td>
+            <button onClick={selected2}>Minor - root position</button>
+          </td>
+          <td>
+            <button onClick={selected2}>Minor - 1st inversion(6)</button>
+          </td>
+          <td>
+            <button onClick={selected2}>Minor - 2nd inversion(4/6)</button>
+          </td>
+        </tr>
+        {/* group3 */}
+        <tr>
+          <td>
+            <button onClick={selected2}>Diminished - root position</button>
+          </td>
+          <td>
+            <button onClick={selected2}>Diminished - 1st inversion(6)</button>
+          </td>
+          <td>
+            <button onClick={selected2}>Diminished - 2nd inversion(4/6)</button>
+          </td>
+        </tr>
+        {/* group4 */}
+        <tr>
+          <td>
+            <button onClick={selected2}>Augmented - root position</button>
+          </td>
+          <td>
+            <button onClick={selected2}>Augmented - 1st inversion(6)</button>
+          </td>
+          <td>
+            <button onClick={selected2}>Augmented - 2nd inversion(4/6)</button>
+          </td>
+        </tr>
+      </table>
       <div>
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
@@ -517,78 +560,207 @@ const SoundPlay = () => {
       </p>
       <button onClick={hRand.rand4}>SOUND</button>
       <h4>options</h4>
-      <button onClick={selected4}>Major triad - root position</button>
-      <button onClick={selected4}>Minor triad - root position</button>
-      <button onClick={selected4}>Diminished triad - root position</button>
-      <button onClick={selected4}>Augmented triad - root position</button>
-      <button onClick={selected4}>Major triad - 1st inversion(6)</button>
-      <button onClick={selected4}>Minor triad - 1st inversion(6)</button>
-      <button onClick={selected4}>Diminished triad - 1st inversion(6)</button>
-      <button onClick={selected4}>Augmented triad - 1st inversion(6)</button>
-      <button onClick={selected4}>Major triad - 2nd inversion(4/6)</button>
-      <button onClick={selected4}>Minor triad - 2nd inversion(4/6)</button>
-      <button onClick={selected4}>Diminished triad - 2nd inversion(4/6)</button>
-      <button onClick={selected4}>Augmented triad - 2nd inversion(4/6)</button>
-      <button onClick={selected4}>
-        Major Major septachord - root position
-      </button>
-      <button onClick={selected4}>
-        Major Major septachord - 1st inversion(6/5)
-      </button>
-      <button onClick={selected4}>
-        Major Major septachord - 2nd inversion(4/3)
-      </button>
-      <button onClick={selected4}>
-        Major Major septachord - 3rd inversion(2)
-      </button>
-      <button onClick={selected4}>
-        Major Minor septachord - root position
-      </button>
-      <button onClick={selected4}>
-        Major Minor septachord - 1st inversion(6/5)
-      </button>
-      <button onClick={selected4}>
-        Major Minor septachord - 2nd inversion(4/3)
-      </button>
-      <button onClick={selected4}>
-        Major Minor septachord - 3rd inversion(2)
-      </button>
-      <button onClick={selected4}>
-        Minor Minor septachord - root position
-      </button>
-      <button onClick={selected4}>
-        Minor Minor septachord - 1st inversion(6/5)
-      </button>
-      <button onClick={selected4}>
-        Minor Minor septachord - 2nd inversion(4/3)
-      </button>
-      <button onClick={selected4}>
-        Minor Minor septachord - 3rd inversion(2)
-      </button>
-      <button onClick={selected4}>
-        Half Diminished septachord - root position
-      </button>
-      <button onClick={selected4}>
-        Half Diminished septachord - 1st inversion(6/5)
-      </button>
-      <button onClick={selected4}>
-        Half Diminished septachord - 2nd inversion(4/3)
-      </button>
-      <button onClick={selected4}>
-        Half Diminished septachord - 3rd inversion(2)
-      </button>
-      <button onClick={selected4}>
-        Fully Diminished septachord - root position
-      </button>
-      <button onClick={selected4}>
-        Fully Diminished septachord - 1st inversion(6/5)
-      </button>
-      <button onClick={selected4}>
-        Fully Diminished septachord - 2nd inversion(4/3)
-      </button>
-      <button onClick={selected4}>
-        Fully Diminished septachord - 3rd inversion(2)
-      </button>
+      <table>
+        <tr>
+          <th>Root position</th>
+          <th>1st inversion</th>
+          <th>2nd inversion</th>
+          <th>3rd inversion</th>
+        </tr>
+        {/* group1 */}
+        <tr>
+          <td>
+            <button onClick={selected4}>Major triad - root position</button>
+          </td>
+          <td>
+            <button onClick={selected4}>Major triad - 1st inversion(6)</button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Major triad - 2nd inversion(4/6)
+            </button>
+          </td>
+        </tr>
+        {/* group2 */}
+        <tr>
+          <td>
+            <button onClick={selected4}>Minor triad - root position</button>
+          </td>
+          <td>
+            <button onClick={selected4}>Minor triad - 1st inversion(6)</button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Minor triad - 2nd inversion(4/6)
+            </button>
+          </td>
+        </tr>
+        {/* group3 */}
+        <tr>
+          <td>
+            <button onClick={selected4}>
+              Diminished triad - root position
+            </button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Diminished triad - 1st inversion(6)
+            </button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Diminished triad - 2nd inversion(4/6)
+            </button>
+          </td>
+        </tr>
+        {/* group4 */}
+        <tr>
+          <td>
+            <button onClick={selected4}>Augmented triad - root position</button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Augmented triad - 1st inversion(6)
+            </button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Augmented triad - 2nd inversion(4/6)
+            </button>
+          </td>
+        </tr>
+        {/* group5 */}
+        <tr>
+          <td>
+            <button onClick={selected4}>
+              Major Major septachord - root position
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Major Major septachord - 1st inversion(6/5)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Major Major septachord - 2nd inversion(4/3)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Major Major septachord - 3rd inversion(2)
+            </button>
+          </td>
+        </tr>
+        {/* group6 */}
+        <tr>
+          <td>
+            <button onClick={selected4}>
+              Major Minor septachord - root position
+            </button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Major Minor septachord - 1st inversion(6/5)
+            </button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Major Minor septachord - 2nd inversion(4/3)
+            </button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Major Minor septachord - 3rd inversion(2)
+            </button>
+          </td>
+        </tr>
+        {/* group7 */}
+        <tr>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Minor Minor septachord - root position
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Minor Minor septachord - 1st inversion(6/5)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Minor Minor septachord - 2nd inversion(4/3)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Minor Minor septachord - 3rd inversion(2)
+            </button>
+          </td>
+        </tr>
+
+        {/* group8 */}
+        <tr>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Half Diminished septachord - root position
+            </button>
+          </td>
+          <td>
+            <button onClick={selected4}>
+              Half Diminished septachord - 1st inversion(6/5)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Half Diminished septachord - 2nd inversion(4/3)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Half Diminished septachord - 3rd inversion(2)
+            </button>
+          </td>
+        </tr>
+        {/* group9 */}
+        <tr>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Fully Diminished septachord - root position
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Fully Diminished septachord - 1st inversion(6/5)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Fully Diminished septachord - 2nd inversion(4/3)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button onClick={selected4}>
+              Fully Diminished septachord - 3rd inversion(2)
+            </button>
+          </td>
+        </tr>
+      </table>
+
       <div>
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
