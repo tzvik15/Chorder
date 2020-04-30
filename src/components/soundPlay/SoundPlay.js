@@ -430,27 +430,28 @@ const SoundPlay = () => {
 
   return difficulty.dif === "" ? (
     <>
-      <h4>Please select the difficulty level</h4>
-      <button onClick={easy}>Easy</button>
-      <button onClick={medium}>Medium</button>
-      <button onClick={advanced}>Advanced</button>
-      <button onClick={hard}>Hard</button>
+      <h4 className ="title">Please select the difficulty level</h4>
+      <button className ="btn-hover color-2" onClick={easy}>Easy</button>
+      <button className ="btn-hover color-6" onClick={medium}>Medium</button>
+      <button className ="btn-hover color-7" onClick={hard}>Hard</button>
+      <button className ="btn-hover color-8" onClick={advanced}>Advanced</button>
+      
     </>
   ) : difficulty === "easy" ? (
     <>
-      <p>
+      <p className ="info"> 
         Please click the "SOUND" button to play sound. You may click it as many
         times as you like. Once you are ready, click the button corresponding to
         the chord you heard. If your answer is correct, a new chord will be
         played when you click the "SOUND" button. If your answer is incorrect,
         the chord will remain the same.
       </p>
-      <button onClick={eRand.rand1}>SOUND</button>
-      <h4>options</h4>
-      <button onClick={selected1}>Major</button>
-      <button onClick={selected1}>Minor</button>
-      <button onClick={selected1}>Diminished</button>
-      <button onClick={selected1}>Augmented</button>
+      <button className="jellyS "onClick={eRand.rand1}>SOUND</button>
+      <h4 className ="info">options</h4>
+      <button className="easyB major" onClick={selected1}>Major</button>
+      <button className="easyB minor" onClick={selected1}>Minor</button>
+      <button className="easyB diminished" onClick={selected1}>Diminished</button>
+      <button className="easyB augmented" onClick={selected1}>Augmented</button>
       <div>
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
@@ -774,3 +775,5 @@ const SoundPlay = () => {
 };
 
 export default SoundPlay;
+
+

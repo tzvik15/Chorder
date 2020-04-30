@@ -27,9 +27,9 @@ const Play =()=> {
     return (
         gameChoice.choice===false?
         <>
-        <h4>Would you like to play with sounds or with theory?</h4>
-        <button onClick={sound}>Sounds</button>
-        <button onClick={theory}>Theory</button>
+        <h4 className ="title">Would you like to play with sounds or with theory?</h4>
+        <button className ="btn-hover colorSound"  onClick={sound}>Sounds</button>
+        <button className ="btn-hover colorTheory"  onClick={theory}>Theory</button>
         </>
         :
         gameChoice.choice===true && gameChoice.sound===false ?
@@ -41,3 +41,6 @@ const Play =()=> {
 }
 
 export default Play;
+
+
+
