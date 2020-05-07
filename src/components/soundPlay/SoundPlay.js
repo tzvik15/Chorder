@@ -446,7 +446,7 @@ const SoundPlay = () => {
         played when you click the "SOUND" button. If your answer is incorrect,
         the chord will remain the same.
       </p>
-      <button className="jellyS "onClick={eRand.rand1}>SOUND</button>
+      <button className="jellyS" onClick={eRand.rand1}>SOUND</button>
       <h4 className ="info">options</h4>
       <button className="easyB major" onClick={selected1}>Major</button>
       <button className="easyB minor" onClick={selected1}>Minor</button>
@@ -459,16 +459,16 @@ const SoundPlay = () => {
     </>
   ) : difficulty === "medium" ? (
     <>
-      <p>
+      <p className ="info">
         Please click the "SOUND" button to play sound. You may click it as many
         times as you like. Once you are ready, click the button corresponding to
         the chord you heard. If your answer is correct, a new chord will be
         played when you click the "SOUND" button. If your answer is incorrect,
         the chord will remain the same.
       </p>
-      <button onClick={mRand.rand2}>SOUND</button>
-      <h4>options</h4>
-      <table>
+      <button className="jellyS" onClick={mRand.rand2}>SOUND</button>
+      <h4  className ="info">options</h4>
+      <table className="table" align="center">
         <tr>
           <th>Root position</th>
           <th>1st inversion</th>
@@ -477,49 +477,49 @@ const SoundPlay = () => {
         {/* group1 */}
         <tr>
           <td>
-            <button onClick={selected2}>Major - root position</button>
+            <button className="mediumB major" onClick={selected2}>Major - root position</button>
           </td>
           <td>
-            <button onClick={selected2}>Major - 1st inversion(6)</button>
+            <button className="mediumB major" onClick={selected2}>Major - 1st inversion(6)</button>
           </td>
           <td>
-            <button onClick={selected2}>Major - 2nd inversion(4/6)</button>
+            <button className="mediumB major" onClick={selected2}>Major - 2nd inversion(4/6)</button>
           </td>
         </tr>
         {/* group2 */}
         <tr>
           <td>
-            <button onClick={selected2}>Minor - root position</button>
+            <button className="mediumB minor" onClick={selected2}>Minor - root position</button>
           </td>
           <td>
-            <button onClick={selected2}>Minor - 1st inversion(6)</button>
+            <button className="mediumB minor" onClick={selected2}>Minor - 1st inversion(6)</button>
           </td>
           <td>
-            <button onClick={selected2}>Minor - 2nd inversion(4/6)</button>
+            <button className="mediumB minor" onClick={selected2}>Minor - 2nd inversion(4/6)</button>
           </td>
         </tr>
         {/* group3 */}
         <tr>
           <td>
-            <button onClick={selected2}>Diminished - root position</button>
+            <button className="mediumB diminished" onClick={selected2}>Diminished - root position</button>
           </td>
           <td>
-            <button onClick={selected2}>Diminished - 1st inversion(6)</button>
+            <button className="mediumB diminished" onClick={selected2}>Diminished - 1st inversion(6)</button>
           </td>
           <td>
-            <button onClick={selected2}>Diminished - 2nd inversion(4/6)</button>
+            <button className="mediumB diminished" onClick={selected2}>Diminished - 2nd inversion(4/6)</button>
           </td>
         </tr>
         {/* group4 */}
         <tr>
           <td>
-            <button onClick={selected2}>Augmented - root position</button>
+            <button className="mediumB augmented" onClick={selected2}>Augmented - root position</button>
           </td>
           <td>
-            <button onClick={selected2}>Augmented - 1st inversion(6)</button>
+            <button className="mediumB augmented" onClick={selected2}>Augmented - 1st inversion(6)</button>
           </td>
           <td>
-            <button onClick={selected2}>Augmented - 2nd inversion(4/6)</button>
+            <button className="mediumB augmented" onClick={selected2}>Augmented - 2nd inversion(4/6)</button>
           </td>
         </tr>
       </table>
@@ -530,21 +530,21 @@ const SoundPlay = () => {
     </>
   ) : difficulty === "advanced" ? (
     <>
-      <p>
+      <p className ="info">
         Please click the "SOUND" button to play sound. You may click it as many
         times as you like. Once you are ready, click the button corresponding to
         the chord you heard.If your answer is correct, a new chord will be
         played when you click the "SOUND" button. If your answer is incorrect,
         the chord will remain the same.
       </p>
-      <button onClick={aRand.rand3}>SOUND</button>
-      <button onClick={log}>log</button>
-      <h4>options</h4>
-      <button onClick={selected3}>Major Major</button>
-      <button onClick={selected3}>Major Minor</button>
-      <button onClick={selected3}>Minor Minor</button>
-      <button onClick={selected3}>Half Diminished</button>
-      <button onClick={selected3}>Fully Diminished</button>
+      <button className="jellyS" onClick={aRand.rand3}>SOUND</button>
+      <button className="jellyS"  onClick={log}>log</button>
+      <h4 className ="info">options</h4>
+      <button className="advancedB majorMajor" onClick={selected3}>Major Major</button>
+      <button className="advancedB majorMinor" onClick={selected3}>Major Minor</button>
+      <button className="advancedB minorMinor" onClick={selected3}>Minor Minor</button>
+      <button className="advancedB halfDiminished" onClick={selected3}>Half Diminished</button>
+      <button className="advancedB fullyDiminished" onClick={selected3}>Fully Diminished</button>
       <div>
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
@@ -552,17 +552,17 @@ const SoundPlay = () => {
     </>
   ) : difficulty === "hard" ? (
     <>
-      <p>
+      <p className ="info">
         Please click the "SOUND" button to play sound. You may click it as many
         times as you like. Once you are ready, click the button corresponding to
         the chord you heard. If your answer is correct, a new chord will be
         played when you click the "SOUND" button. If your answer is incorrect,
         the chord will remain the same.
       </p>
-      <button onClick={hRand.rand4}>SOUND</button>
-      <h4>options</h4>
+      <button className="jellyS" onClick={hRand.rand4}>SOUND</button>
+      <h4 className ="info">options</h4>
       <table>
-        <tr>
+        <tr className="table">
           <th>Root position</th>
           <th>1st inversion</th>
           <th>2nd inversion</th>
@@ -571,13 +571,13 @@ const SoundPlay = () => {
         {/* group1 */}
         <tr>
           <td>
-            <button onClick={selected4}>Major triad - root position</button>
+            <button className="hardB majorTriad"  onClick={selected4}>Major triad - root position</button>
           </td>
           <td>
-            <button onClick={selected4}>Major triad - 1st inversion(6)</button>
+            <button className="hardB majorTriad" onClick={selected4}>Major triad - 1st inversion(6)</button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB majorTriad" onClick={selected4}>
               Major triad - 2nd inversion(4/6)
             </button>
           </td>
@@ -585,13 +585,13 @@ const SoundPlay = () => {
         {/* group2 */}
         <tr>
           <td>
-            <button onClick={selected4}>Minor triad - root position</button>
+            <button className="hardB minorTriad" onClick={selected4}>Minor triad - root position</button>
           </td>
           <td>
-            <button onClick={selected4}>Minor triad - 1st inversion(6)</button>
+            <button className="hardB minorTriad" onClick={selected4}>Minor triad - 1st inversion(6)</button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB minorTriad" onClick={selected4}>
               Minor triad - 2nd inversion(4/6)
             </button>
           </td>
@@ -599,17 +599,17 @@ const SoundPlay = () => {
         {/* group3 */}
         <tr>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB diminidhedTriad" onClick={selected4}>
               Diminished triad - root position
             </button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB diminidhedTriad"  onClick={selected4}>
               Diminished triad - 1st inversion(6)
             </button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB diminidhedTriad"  onClick={selected4}>
               Diminished triad - 2nd inversion(4/6)
             </button>
           </td>
@@ -617,15 +617,15 @@ const SoundPlay = () => {
         {/* group4 */}
         <tr>
           <td>
-            <button onClick={selected4}>Augmented triad - root position</button>
+            <button className="hardB augmentedTriad" onClick={selected4}>Augmented triad - root position</button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB augmentedTriad"  onClick={selected4}>
               Augmented triad - 1st inversion(6)
             </button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB augmentedTriad"  onClick={selected4}>
               Augmented triad - 2nd inversion(4/6)
             </button>
           </td>
@@ -633,25 +633,25 @@ const SoundPlay = () => {
         {/* group5 */}
         <tr>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB majorMajor"  onClick={selected4}>
               Major Major septachord - root position
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB majorMajor" onClick={selected4}>
               Major Major septachord - 1st inversion(6/5)
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB majorMajor" onClick={selected4}>
               Major Major septachord - 2nd inversion(4/3)
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB majorMajor" onClick={selected4}>
               Major Major septachord - 3rd inversion(2)
             </button>
           </td>
@@ -659,22 +659,22 @@ const SoundPlay = () => {
         {/* group6 */}
         <tr>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB majorMinor" onClick={selected4}>
               Major Minor septachord - root position
             </button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB majorMinor" onClick={selected4}>
               Major Minor septachord - 1st inversion(6/5)
             </button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB majorMinor" onClick={selected4}>
               Major Minor septachord - 2nd inversion(4/3)
             </button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB majorMinor" onClick={selected4}>
               Major Minor septachord - 3rd inversion(2)
             </button>
           </td>
@@ -683,25 +683,25 @@ const SoundPlay = () => {
         <tr>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB minorMinor"  onClick={selected4}>
               Minor Minor septachord - root position
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB minorMinor" onClick={selected4}>
               Minor Minor septachord - 1st inversion(6/5)
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB minorMinor"  onClick={selected4}>
               Minor Minor septachord - 2nd inversion(4/3)
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB minorMinor"  onClick={selected4}>
               Minor Minor septachord - 3rd inversion(2)
             </button>
           </td>
@@ -711,24 +711,24 @@ const SoundPlay = () => {
         <tr>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB halfDiminished" onClick={selected4}>
               Half Diminished septachord - root position
             </button>
           </td>
           <td>
-            <button onClick={selected4}>
+            <button className="hardB halfDiminished"  onClick={selected4}>
               Half Diminished septachord - 1st inversion(6/5)
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB halfDiminished"  onClick={selected4}>
               Half Diminished septachord - 2nd inversion(4/3)
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB halfDiminished"  onClick={selected4}>
               Half Diminished septachord - 3rd inversion(2)
             </button>
           </td>
@@ -737,25 +737,25 @@ const SoundPlay = () => {
         <tr>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB fullyDiminished" onClick={selected4}>
               Fully Diminished septachord - root position
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB fullyDiminished" onClick={selected4}>
               Fully Diminished septachord - 1st inversion(6/5)
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB fullyDiminished" onClick={selected4}>
               Fully Diminished septachord - 2nd inversion(4/3)
             </button>
           </td>
           <td>
             {" "}
-            <button onClick={selected4}>
+            <button className="hardB fullyDiminished"  onClick={selected4}>
               Fully Diminished septachord - 3rd inversion(2)
             </button>
           </td>

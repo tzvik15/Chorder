@@ -74,7 +74,7 @@
 	font-size: 2rem;
 	font-weight: 600;
 	border: 1px solid #012880;
-	background-image: linear-gradient(-180deg, rgb(155, 6, 103) 0%, #C01F9E 100%);
+	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
 	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
 							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
 							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
@@ -100,7 +100,6 @@
 	width: calc(100% - 7.5rem);
 	background: #fff;
 	border-radius: 100%;
-	
 	opacity: 0.7;
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
@@ -116,7 +115,6 @@
 	width: calc(100% - 7.5rem);
 	background: #fff;
 	border-radius: 100%;
-	
 	filter: blur(1px);
 	opacity: 0.05;
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
@@ -153,7 +151,6 @@
     margin: 10px;
     padding: 30px;
     text-align: center;
-    text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     color: rgb(0, 0, 0);
@@ -181,3 +178,146 @@
   .augmented {
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
   }
+
+
+  /* MEDIUM BUTTON'S */
+  .table{
+      align: center;
+
+  }
+  .mediumB {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);
+   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+   }
+
+    .mediumB:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+  
+  .major{
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  }
+  
+  .minor {
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  }
+  
+  .diminished {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  }
+  
+  .augmented {
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  }
+
+
+  /* ADVANCED BUTTONS */
+
+.table{
+      align: center;
+
+  }
+  .advancedB {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);
+   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+   }
+
+    .advancedB:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+  
+  .majorMajor{
+    background-image: linear-gradient(to right, #f8cf46 0%, #f1653f 51%, #f8c006 100%);
+  }
+  
+  .majorMinor{
+    background-image: linear-gradient(to right, #f533be 0%, #095dee 51%, #fa04b4 100%);
+  }
+  
+  .minorMinor {
+    background-image: linear-gradient(to right, #08fa61 0%, #06a5f5 51%, #06fc60 100%);
+  }
+  
+  .halfDiminished {
+    background-image: linear-gradient(to right, #086aa3 0%, #0f9da1 51%, #26a3ec 100%);
+  }
+
+  .fullyDiminished{
+    background-image: linear-gradient(to right, #be03f7 0%, #04dcf8 51%, #04f8f8 100%);
+  }
+
+
+  /* HARD BUTTONS */
+
+.table{
+    align: center;
+
+}
+.hardB {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+  .hardB:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.majorMajor{
+  background-image: linear-gradient(to right, #f8cf46 0%, #f1653f 51%, #f8c006 100%);
+}
+
+.majorMinor{
+  background-image: linear-gradient(to right, #f533be 0%, #095dee 51%, #fa04b4 100%);
+}
+
+.minorMinor {
+  background-image: linear-gradient(to right, #08fa61 0%, #06a5f5 51%, #06fc60 100%);
+}
+
+.halfDiminished {
+  background-image: linear-gradient(to right, #086aa3 0%, #0f9da1 51%, #26a3ec 100%);
+}
+
+.fullyDiminished{
+  background-image: linear-gradient(to right, #745399 0%, #559597 51%, #50617e 100%);
+}
+
+.majorTriad{
+    background-image: linear-gradient(to right, #f8f29d 0%, #f78686 51%, #fac564 100%);
+}
+
+.minorTriad{
+    background-image: linear-gradient(to right, #f596e5 0%, #7577eb 51%, #fa85c9 100%);
+}
+
+.diminidhedTriad{
+    background-image: linear-gradient(to right, #83ee91 0%, #78aeec 51%, #7af880 100%);
+}
+
+.augmentedTriad{
+    background-image: linear-gradient(to right, #e9c4f5 0%, #b1ebf3 51%, #c2f7f7 100%);
+}
