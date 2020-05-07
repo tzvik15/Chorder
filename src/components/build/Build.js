@@ -13,6 +13,51 @@ import hdimMiss3 from "../../assets/images/hdim-3.jpg"
 import hdimMiss5 from "../../assets/images/hdim-5.jpg"
 import dimMiss3 from "../../assets/images/dim-3.jpg"
 import dimMiss5 from "../../assets/images/dim-5.jpg"
+import M6miss1 from "../../assets/images/M6miss1.jpg"
+import M6miss3 from "../../assets/images/M6miss3.jpg"
+import M6miss5 from "../../assets/images/M6miss5.jpg"
+import Min6miss1 from "../../assets/images/Min6miss1.jpg"
+import Min6miss5 from "../../assets/images/Min6miss5.jpg"
+import Aug6miss1 from "../../assets/images/Aug6miss1.jpg"
+import Aug6miss3 from "../../assets/images/Aug6miss3.jpg"
+import Dim6miss1 from "../../assets/images/dim6miss1.jpg"
+import Dim6miss3 from "../../assets/images/Dim6miss3.jpg"
+import M46miss1 from "../../assets/images/M46miss1.jpg"
+import M46miss3 from "../../assets/images/M46miss3.jpg"
+import M46miss5 from "../../assets/images/M46miss5.jpg"
+import Min46miss1 from "../../assets/images/Min46miss1.jpg"
+import Min46miss5 from "../../assets/images/Min46miss5.jpg"
+import Dim46miss1 from "../../assets/images/Dim46miss1.jpg"
+import Dim46miss3 from "../../assets/images/Dim46miss3.jpg"
+import Aug46miss1 from "../../assets/images/Aug46miss1.jpg"
+import Aug46miss3 from "../../assets/images/Aug46miss3.jpg"
+import MMmiss1 from "../../assets/images/MM-1.jpg"
+import MMmiss7 from "../../assets/images/MM-7.jpg"
+import MM56miss1 from "../../assets/images/MM56-1.jpg"
+import MM56miss3 from "../../assets/images/MM56-3.jpg"
+import MM56miss5 from "../../assets/images/MM56-5.jpg"
+import MM56miss7 from "../../assets/images/MM56-7.jpg"
+import Mmin56Miss1 from "../../assets/images/MminMiss1.jpg"
+import Mmin56Miss3 from "../../assets/images/MMin56-3.jpg"
+import Mmin56Miss5 from "../../assets/images/Mmin56-5.jpg"
+import MinMin56Miss1 from "../../assets/images/MinMin56-1.jpg"
+import MinMin56Miss7 from "../../assets/images/MinMin56-7.jpg"
+import MinMinMiss1 from "../../assets/images/minmin-1.jpg"
+import MinMinMiss7 from "../../assets/images/MinMin-7.jpg"
+import HDimMiss1 from "../../assets/images/hdim-1.jpg"
+import HDimMiss7 from "../../assets/images/hdim-7.jpg"
+import HDim56Miss1 from "../../assets/images/hdim56-1.jpg"
+import HDim56Miss3 from "../../assets/images/hdim56-3.jpg"
+import HDim56Miss5 from "../../assets/images/hdim56-5.jpg"
+import DimDimMiss1 from "../../assets/images/dimdim-1.jpg"
+import DimDim56Miss1 from "../../assets/images/dimdim56-1.jpg"
+import DimDim56Miss3 from "../../assets/images/dimdim56-3.jpg"
+import DimDim56Miss5 from "../../assets/images/dimdim56-5.jpg"
+import MminMiss1 from "../../assets/images/MMin-1.jpg"
+import Dim56Miss7 from "../../assets/images/Dim56-7.jpg"
+
+
+
 
 import LE from "../../assets/images/LE.jpg"
 import LEb from "../../assets/images/LEb.jpg"
@@ -139,7 +184,418 @@ const Build =()=>{
         setRootRand({ case:rand1.case, name:rand1.name, pic:rand1.pic, answer:rand1.answer });
       };
 
-    const inverArr = [];
+    const inverArr = [ {
+        case:"missing third",
+        name: "Major Triad root position",
+        pic: MTriad,
+        answer:LE
+    },
+    {
+        case: "missing third",
+        name: "Minor Triad root position",
+        pic: MTriad,
+        answer:LEb
+    },
+    {
+        case: "missing third",
+        name:"Diminished Triad root position",
+        pic:dimTriad,
+        answer:LEb
+    },
+    {
+        case: "missing third",
+        name:"Augmented Triad root position",
+        pic:augTriad,
+        answer:LE
+    },
+    {
+        case:"missing third sept",
+        name: "Major Major Septachord root position",
+        pic: MMmiss3,
+        answer:LE
+    },
+    {
+        case: "missing third sept",
+        name: "Major Minor Septachord root position",
+        pic: MminMiss3,
+        answer:LE
+    },
+    {
+        case: "missing third sept",
+        name:"Minor Minor Septachord root position",
+        pic:MminMiss3,
+        answer:LEb
+    },
+    {
+        case: "missing third sept",
+        name:"Half Diminished Septachord root position",
+        pic:hdimMiss3,
+        answer:LEb
+    },
+    {
+        case: "missing third sept",
+        name:"Fully Diminished Septachord root position",
+        pic:dimMiss3,
+        answer:LEb
+    },
+    {
+        case:"missing fifth sept",
+        name: "Major Major Septachord root position",
+        pic: MMmiss5,
+        answer:LG
+    },
+    {
+        case: "missing fifth sept",
+        name: "Major Minor Septachord root position",
+        pic: MminMiss5,
+        answer:LG
+    },
+    {
+        case: "missing fifth sept",
+        name:"Minor Minor Septachord root position",
+        pic:hdimMiss5,
+        answer:LG
+    },
+    {
+        case: "missing fifth sept",
+        name:"Half Diminished Septachord root position",
+        pic:hdimMiss5,
+        answer:LGb
+    },
+    {
+        case: "missing fifth sept",
+        name:"Fully Diminished Septachord root position",
+        pic:dimMiss5,
+        answer:LGb
+    },
+    {
+        case:"M6 missing 1",
+        name:"Major Triad 1st inversion (6)",
+        pic:M6miss1,
+        answer:HC
+    },
+    {
+        case:"M6 missing 3",
+        name:"Major Triad 1st inversion (6)",
+        pic:M6miss3,
+        answer:LE
+    },
+    {
+        case:"M6 missing 5",
+        name:"Major Triad 1st inversion (6)",
+        pic:M6miss5,
+        answer:LG
+    },
+    {
+        case:"m6 missing 1",
+        name:"Minor Triad 1st inversion (6)",
+        pic:Min6miss1,
+        answer:HC
+    },
+    {
+        case:"m6 missing 3",
+        name:"Minor Triad 1st inversion (6)",
+        pic:M6miss3,
+        answer:LEb
+    },
+    {
+        case:"m6 missing 5",
+        name:"Minor Triad 1st inversion (6)",
+        pic:Min6miss5,
+        answer:LG
+    },
+    {
+        case:"Dim6 missing 1",
+        name:"Diminished Triad 1st inversion (6)",
+        pic:Dim6miss1,
+        answer:HC
+    },
+    {
+        case:"Dim6 missing 3",
+        name:"Diminished Triad 1st inversion (6)",
+        pic:Dim6miss3,
+        answer:LEb
+    },
+    {
+        case:"Dim6 missing 5",
+        name:"Diminished Triad 1st inversion (6)",
+        pic:Min6miss5,
+        answer:LGb
+    },
+    {
+        case:"Aug6 missing 1",
+        name:"Augmented Triad 1st inversion (6)",
+        pic:Aug6miss1,
+        answer:HC
+    },
+    {
+        case:"Aug6 missing 3",
+        name:"Augmented Triad 1st inversion (6)",
+        pic:Aug6miss3,
+        answer:LE
+    },
+    {
+        case:"Aug6 missing 5",
+        name:"Augmented Triad 1st inversion (6)",
+        pic:M6miss5,
+        answer:LGSharp
+    },
+    {
+        case:"M4/6 missing 1",
+        name:"Major Triad 2nd inversion (4/6)",
+        pic:M46miss1,
+        answer:HC
+    },
+    {
+        case:"M4/6 missing 3",
+        name:"Major Triad 2nd inversion (4/6)",
+        pic:M46miss3,
+        answer:HE
+    },
+    {
+        case:"M4/6 missing 5",
+        name:"Major Triad 2nd inversion (4/6)",
+        pic:M46miss5,
+        answer:LG
+    },
+    {
+        case:"m4/6 missing 1",
+        name:"Minor Triad 2nd inversion (4/6)",
+        pic:Min46miss1,
+        answer:HC
+    },
+    {
+        case:"m46 missing 3",
+        name:"Minor Triad 2nd inversion (4/6)",
+        pic:M46miss3,
+        answer:HEb
+    },
+    {
+        case:"m4/6 missing 5",
+        name:"Minor Triad 2nd inversion (4/6)",
+        pic:Min46miss5,
+        answer:LG
+    },
+    {
+        case:"Dim4/6 missing 1",
+        name:"Diminished Triad 2nd inversion (4/6)",
+        pic:Dim46miss1,
+        answer:HC
+    },
+    {
+        case:"Dim4/6 missing 3",
+        name:"Diminished Triad 2nd inversion (4/6)",
+        pic:Dim46miss3,
+        answer:HEb
+    },
+    {
+        case:"Dim4/6 missing 5",
+        name:"Diminished Triad 2nd inversion (4/6)",
+        pic:Min46miss5,
+        answer:LGb
+    },
+    {
+        case:"Aug4/6 missing 1",
+        name:"Augmented Triad 2nd inversion (4/6)",
+        pic:Aug46miss1,
+        answer:HC
+    },
+    {
+        case:"Aug4/6 missing 3",
+        name:"Augmented Triad 2nd inversion (4/6)",
+        pic:Aug46miss3,
+        answer:HE
+    },
+    {
+        case:"Aug4/6 missing 5",
+        name:"Augmented Triad 2nd inversion (4/6)",
+        pic:M46miss5,
+        answer:LGSharp
+    },
+    {
+        case:"MM7 missing 1",
+        name:"Major Major Septachord root position",
+        pic:MMmiss1,
+        answer:LC
+    },
+    {
+        case:"MM7 missing 7",
+        name:"Major Major Septachord root position",
+        pic:MMmiss7,
+        answer:LB
+    }, 
+    {
+        case:"Mm7 missing 1",
+        name:"Major Minor Septachord root position",
+        pic:MminMiss1,
+        answer:LC
+    },
+    {
+        case:"Mm7 missing 7",
+        name:"Major Minor Septachord root position",
+        pic:MMmiss7,
+        answer:LBb
+    }, 
+    {
+        case:"mm7 missing 1",
+        name:"Minor Minor Septachord root position",
+        pic:MinMinMiss1,
+        answer:LC
+    },
+    {
+        case:"mm7 missing 7",
+        name:"Minor Minor Septachord root position",
+        pic:MinMinMiss7,
+        answer:LBb
+    },
+    {
+        case:"hdim7 missing 1",
+        name:"Half Diminished Septachord root position",
+        pic:HDimMiss1,
+        answer:LC
+    },
+    {
+        case:"hdimm7 missing 7",
+        name:"Half Diminished Septachord root position",
+        pic:HDimMiss7,
+        answer:LBb
+    },  
+    {
+        case:"dimdim7 missing 1",
+        name:"Fully Diminished Septachord root position",
+        pic:DimDimMiss1,
+        answer:LC
+    },
+    {
+        case:"dimdimm7 missing 7",
+        name:"Fully Diminished Septachord root position",
+        pic:HDimMiss7,
+        answer:LBbb
+    }, 
+    {
+        case: "MM56 missing 1",
+        name: "Major Major Septachord, 1st inversion (5/6)",
+        pic:MM56miss1,
+        answer:HC
+    },
+    {
+        case: "MM56 missing 3",
+        name: "Major Major Septachord, 1st inversion (5/6)",
+        pic:MM56miss3,
+        answer:LE
+    },
+    {
+        case: "MM56 missing 5",
+        name: "Major Major Septachord, 1st inversion (5/6)",
+        pic:MM56miss5,
+        answer:LG
+    },
+    {
+        case: "MM56 missing 7",
+        name: "Major Major Septachord, 1st inversion (5/6)",
+        pic:MM56miss7,
+        answer:LB
+    },
+    {
+        case: "Mm56 missing 1",
+        name: "Major Minor Septachord, 1st inversion (5/6)",
+        pic:Mmin56Miss1,
+        answer:HC
+    },
+    {
+        case: "Mm56 missing 3",
+        name: "Major Minor Septachord, 1st inversion (5/6)",
+        pic:Mmin56Miss3,
+        answer:LE
+    },
+    {
+        case: "Mm56 missing 5",
+        name: "Major Minor Septachord, 1st inversion (5/6)",
+        pic:Mmin56Miss5,
+        answer:LG
+    },
+    {
+        case: "Mm56 missing 7",
+        name: "Major Minor Septachord, 1st inversion (5/6)",
+        pic:MM56miss7,
+        answer:LBb
+    },
+    {
+        case: "mm56 missing 1",
+        name: "Minor Minor Septachord, 1st inversion (5/6)",
+        pic:MinMin56Miss1,
+        answer:HC
+    },
+    {
+        case: "mm56 missing 3",
+        name: "Minor Minor Septachord, 1st inversion (5/6)",
+        pic:Mmin56Miss3,
+        answer:LEb
+    },
+    {
+        case: "mm56 missing 5",
+        name: "Minor Minor Septachord, 1st inversion (5/6)",
+        pic:Mmin56Miss5,
+        answer:LG
+    },
+    {
+        case: "mm56 missing 7",
+        name: "Minor Minor Septachord, 1st inversion (5/6)",
+        pic:MinMin56Miss7,
+        answer:LBb
+    },
+    {
+        case: "hdim56 missing 1",
+        name: "Half Diminished Septachord, 1st inversion (5/6)",
+        pic:HDim56Miss1,
+        answer:HC
+    },
+    {
+        case: "hdim56 missing 3",
+        name: "Half Diminished Septachord, 1st inversion (5/6)",
+        pic:HDim56Miss3,
+        answer:LEb
+    },
+    {
+        case: "hdim56 missing 5",
+        name: "Half Diminished Septachord, 1st inversion (5/6)",
+        pic:HDim56Miss5,
+        answer:LGb
+    },
+    {
+        case: "hdim56 missing 7",
+        name: "Half Diminished Septachord, 1st inversion (5/6)",
+        pic: Dim56Miss7,
+        answer:LBb
+    },
+    {
+        case: "dim56 missing 1",
+        name: "Fully Diminished Septachord, 1st inversion (5/6)",
+        pic:DimDim56Miss1,
+        answer:HC
+    },
+    {
+        case: "dim56 missing 3",
+        name: "Fully Diminished Septachord, 1st inversion (5/6)",
+        pic:DimDim56Miss3,
+        answer:LEb
+    },
+    {
+        case: "dim56 missing 5",
+        name: "Fully Diminished Septachord, 1st inversion (5/6)",
+        pic:DimDim56Miss5,
+        answer:LGb
+    },
+    {
+        case: "dim56 missing 7",
+        name: "Fully Diminished Septachord, 1st inversion (5/6)",
+        pic: Dim56Miss7,
+        answer:LBbb
+    },
+    
+
+];  
+
 
     const rootChoices =[LC, LCSharp, LCb, LE, LESharp, LEb, LG, LGSharp, LGb ];
     const inverChoices = [LC, LCSharp, LCb, LE, LESharp, LEb, LG, LGSharp, LGb, HC, HCSharp, HCb, HE, HESharp, HEb, HG, HGSharp, HGb, LB, LBb, LBbb]
@@ -173,7 +629,6 @@ const Build =()=>{
       };
 
       const selected1 = (event) => {
-          
           if (event.target.src===rootRand.answer) {
                coAn();
                random1();
