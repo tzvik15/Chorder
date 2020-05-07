@@ -110,7 +110,7 @@ const Build =()=>{
         {
             case: "missing fifth sept",
             name:"Minor Minor Septachord",
-            pic:MminMiss5,
+            pic:hdimMiss5,
             answer:LG
         },
         {
@@ -125,9 +125,19 @@ const Build =()=>{
             pic:dimMiss5,
             answer:LGb
         }
-
-
     ]
+
+    const [rootRand, setRootRand] = useState({
+        case:"",
+        name:"",
+        pic:null,
+        answer:null
+    })
+
+    const random1 = () => {
+        let rand1 = rootArr[Math.floor(Math.random() * rootArr.length)];
+        setRootRand({ case:rand1.case, name:rand1.name, pic:rand1.pic, answer:rand1.answer });
+      };
 
     const inverArr = [];
 
@@ -144,29 +154,35 @@ const Build =()=>{
     }
 
     const rooter=()=>{
+        random1();
         setChoice({root: true, inversion:false} )
     }
 
-    // const [count, setCount] = useState({
-    //     yes: 0,
-    //     no: 0,
-    //   });
-    
-    //   const coAn = () => {
-    //     setCount({ ...count, yes: count.yes + 1 });
-    //   };
-    
-    //   const inCoAn = () => {
-    //     setCount({ ...count, no: count.no + 1 });
-    //   };
 
-    //   const selected = (event) => {
-    //     if (event.target.innerText === correct) {
-    //       coAn();
-    //     //   random1();
-    //     } else inCoAn();
-    //     console.log("selected: " + event.target.innerText, "correct: " + correct);
-    //   };
+    const [count, setCount] = useState({
+        yes: 0,
+        no: 0,
+      });
+    
+      const coAn = () => {
+        setCount({ ...count, yes: count.yes + 1 });
+      };
+    
+      const inCoAn = () => {
+        setCount({ ...count, no: count.no + 1 });
+      };
+
+      const selected1 = (event) => {
+          
+          if (event.target.src===rootRand.answer) {
+               coAn();
+               random1();
+              console.log("yes")
+          } else {
+              console.log("no");
+              inCoAn()
+          }
+      };
 
     return(
         choice.root===false && choice.inversion===false?
@@ -200,18 +216,22 @@ const Build =()=>{
         <h1>root stuff</h1>
         <h4>Please complete the following chord.</h4>
         <div>
-            <p>Chord name: </p> {rootArr[0].name}
+            <p>Chord name: </p> {rootRand.name}
             <br/>
             <br/>
-            <img src={rootArr[0].pic} alt="fifth" />
+            <img src={rootRand.pic} alt="chord with missing note" />
             <h4>Please select the note that would complete the chord</h4>
             <br/>
             {
                 rootChoices.map(item => (
-                    <button ><img src={item} alt="note"/></button>
+                    <button onClick={selected1}><img src={item} alt="note"/></button>
                 ))
             }
         </div>
+        <div>
+        <h1 className="text">Correct Answers: {count.yes}</h1>
+        <h1 className="text">Incorrect Answers: {count.no}</h1>
+      </div>
         </>
     )
 }
