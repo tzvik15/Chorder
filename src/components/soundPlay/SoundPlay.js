@@ -432,9 +432,9 @@ const SoundPlay = () => {
     <>
       <h4 className ="title">Please select the difficulty level</h4>
       <button className ="btn-hover color-2" onClick={easy}>Easy</button>
-      <button className ="btn-hover color-6" onClick={medium}>Medium</button>
-      <button className ="btn-hover color-7" onClick={hard}>Hard</button>
-      <button className ="btn-hover color-8" onClick={advanced}>Advanced</button>
+      <button className ="btn-hover color-6" onClick={medium}>intermediate</button>
+      <button className ="btn-hover color-8" onClick={advanced}>hard</button>
+      <button className ="btn-hover color-7" onClick={hard}>expert</button>
       
     </>
   ) : difficulty === "easy" ? (
