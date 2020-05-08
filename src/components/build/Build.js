@@ -55,7 +55,40 @@ import DimDim56Miss3 from "../../assets/images/dimdim56-3.jpg"
 import DimDim56Miss5 from "../../assets/images/dimdim56-5.jpg"
 import MminMiss1 from "../../assets/images/MMin-1.jpg"
 import Dim56Miss7 from "../../assets/images/Dim56-7.jpg"
-
+import MM34Miss1 from "../../assets/images/MM34-1.jpg"
+import MM34Miss3 from "../../assets/images/MM34-3.jpg"
+import MM34Miss5 from "../../assets/images/MM34-5.jpg"
+import MM34Miss7 from "../../assets/images/MM34-7.jpg"
+import MMin34Miss1 from "../../assets/images/MMin34-1.jpg"
+import MMin34Miss3 from "../../assets/images/MMin34-3.jpg"
+import MMin34Miss5 from "../../assets/images/MMin34-5.jpg"
+import MinMin34Miss1 from "../../assets/images/MinMin34-1.jpg"
+import MinMin34Miss5 from "../../assets/images/MinMin34-5.jpg"
+import MinMin34Miss7 from "../../assets/images/MinMin34-7.jpg"
+import HDim34Miss1 from "../../assets/images/HDim34-1.jpg"
+import HDim34Miss3 from "../../assets/images/HDim34-3.jpg"
+import HDim34Miss5 from "../../assets/images/HDim34-5.jpg"
+import HDim34Miss7 from "../../assets/images/HDim34-7.jpg"
+import DimDim34Miss1 from "../../assets/images/DimDim34-1.jpg"
+import DimDim34Miss3 from "../../assets/images/DimDim34-3.jpg"
+import DimDim34Miss5 from "../../assets/images/DimDim34-5.jpg"
+import MM2Miss1 from "../../assets/images/MM2-1.jpg"
+import MM2Miss3 from "../../assets/images/MM2-3.jpg"
+import MM2Miss5 from "../../assets/images/MM2-5.jpg"
+import MM2Miss7 from "../../assets/images/MM2-7.jpg"
+import MMin2Miss1 from "../../assets/images/MMin2-1.jpg"
+import MMin2Miss3 from "../../assets/images/MMin2-3.jpg"
+import MMin2Miss5 from "../../assets/images/MMin2-5.jpg"
+import MinMin2Miss1 from "../../assets/images/MinMin2-1.jpg"
+import MinMin2Miss5 from "../../assets/images/MinMin2-5.jpg"
+import MinMin2Miss7 from "../../assets/images/MinMin2-7.jpg"
+import HDim2Miss1 from "../../assets/images/HDim2-1.jpg"
+import HDim2Miss3 from "../../assets/images/HDim2-3.jpg"
+import HDim2Miss5 from "../../assets/images/HDim2-5.jpg"
+import HDim2Miss7 from "../../assets/images/HDim2-7.jpg"
+import DimDim2Miss1 from "../../assets/images/DimDim2-1.jpg"
+import DimDim2Miss3 from "../../assets/images/DimDim2-3.jpg"
+import DimDim2Miss5 from "../../assets/images/DimDim2-5.jpg"
 
 
 
@@ -179,9 +212,21 @@ const Build =()=>{
         answer:null
     })
 
+    const [inverRand, setInverRand] = useState({
+        case:"",
+        name:"",
+        pic:null,
+        answer:null
+    })
+
     const random1 = () => {
         let rand1 = rootArr[Math.floor(Math.random() * rootArr.length)];
         setRootRand({ case:rand1.case, name:rand1.name, pic:rand1.pic, answer:rand1.answer });
+      };
+
+      const random2 = () => {
+        let rand2 = inverArr[Math.floor(Math.random() * inverArr.length)];
+        setInverRand({ case:rand2.case, name:rand2.name, pic:rand2.pic, answer:rand2.answer });
       };
 
     const inverArr = [ {
@@ -592,6 +637,246 @@ const Build =()=>{
         pic: Dim56Miss7,
         answer:LBbb
     },
+    {
+        case: "MM34 missing 1",
+        name: "Major Major Septachord, 2nd inversion (3/4)",
+        pic:MM34Miss1,
+        answer:HC
+    },
+    {
+        case: "MM34 missing 3",
+        name: "Major Major Septachord, 2nd inversion (3/4)",
+        pic:MM34Miss3,
+        answer:HE
+    },
+    {
+        case: "MM34 missing 5",
+        name: "Major Major Septachord, 2nd inversion (3/4)",
+        pic:MM34Miss5,
+        answer:LG
+    },
+    {
+        case: "MM34 missing 7",
+        name: "Major Major Septachord, 2nd inversion (3/4)",
+        pic:MM34Miss7,
+        answer:LB
+    },
+    {
+        case: "Mm34 missing 1",
+        name: "Major Minor Septachord, 2nd inversion (3/4)",
+        pic:MMin34Miss1,
+        answer:HC
+    },
+    {
+        case: "Mm34 missing 3",
+        name: "Major Minor Septachord,2nd inversion (3/4)",
+        pic:MMin34Miss3,
+        answer:HE
+    },
+    {
+        case: "Mm34 missing 5",
+        name: "Major Minor Septachord, 2nd inversion (3/4)",
+        pic:MMin34Miss5,
+        answer:LG
+    },
+    {
+        case: "Mm34 missing 7",
+        name: "Major Minor Septachord, 2nd inversion (3/4)",
+        pic:MM34Miss7,
+        answer:LBb
+    },
+    {
+        case: "mm34 missing 1",
+        name: "Minor Minor Septachord, 2nd inversion (3/4)",
+        pic:MinMin34Miss1,
+        answer:HC
+    },
+    {
+        case: "mm34 missing 3",
+        name: "Minor Minor Septachord, 2nd inversion (3/4)",
+        pic:MMin34Miss3,
+        answer:HEb
+    },
+    {
+        case: "mm34 missing 5",
+        name: "Minor Minor Septachord, 2nd inversion (3/4)",
+        pic:MinMin34Miss5,
+        answer:LG
+    },
+    {
+        case: "mm34 missing 7",
+        name: "Minor Minor Septachord, 2nd inversion (3/4)",
+        pic:MinMin34Miss7,
+        answer:LBb
+    },
+    {
+        case: "hdim34 missing 1",
+        name: "Half Diminished Septachord, 2nd inversion (3/4)",
+        pic:HDim34Miss1,
+        answer:HC
+    },
+    {
+        case: "hdim34 missing 3",
+        name: "Half Diminished Septachord, 2nd inversion (3/4)",
+        pic:HDim34Miss3,
+        answer:HEb
+    },
+    {
+        case: "hdim34 missing 5",
+        name: "Half Diminished Septachord, 2nd inversion (3/4)",
+        pic:HDim34Miss5,
+        answer:LGb
+    },
+    {
+        case: "hdim34 missing 7",
+        name: "Half Diminished Septachord, 2nd inversion (3/4)",
+        pic: HDim34Miss7,
+        answer:LBb
+    },
+    {
+        case: "dim34 missing 1",
+        name: "Fully Diminished Septachord, 2nd inversion (3/4)",
+        pic:DimDim34Miss1,
+        answer:HC
+    },
+    {
+        case: "dim34 missing 3",
+        name: "Fully Diminished Septachord, 2nd inversion (3/4)",
+        pic:DimDim34Miss3,
+        answer:HEb
+    },
+    {
+        case: "dim34 missing 5",
+        name: "Fully Diminished Septachord, 2nd inversion (3/4)",
+        pic:DimDim34Miss5,
+        answer:LGb
+    },
+    {
+        case: "dim34 missing 7",
+        name: "Fully Diminished Septachord, 2nd inversion (3/4)",
+        pic: HDim34Miss7,
+        answer:LBbb
+    },
+    {
+        case: "MM2 missing 1",
+        name: "Major Major Septachord, 3rd inversion (2)",
+        pic:MM2Miss1,
+        answer:HC
+    },
+    {
+        case: "MM2 missing 3",
+        name: "Major Major Septachord, 3rd inversion (2)",
+        pic:MM2Miss3,
+        answer:HE
+    },
+    {
+        case: "MM2 missing 5",
+        name: "Major Major Septachord, 3rd inversion (2)",
+        pic:MM2Miss5,
+        answer:HG
+    },
+    {
+        case: "MM2 missing 7",
+        name: "Major Major Septachord, 3rd inversion (2)",
+        pic:MM2Miss7,
+        answer:LB
+    },
+    {
+        case: "Mm2 missing 1",
+        name: "Major Minor Septachord, 3rd inversion (2)",
+        pic:MMin2Miss1,
+        answer:HC
+    },
+    {
+        case: "Mm2 missing 3",
+        name: "Major Minor Septachord, 3rd inversion (2)",
+        pic:MMin2Miss3,
+        answer:HE
+    },
+    {
+        case: "Mm2 missing 5",
+        name: "Major Minor Septachord, 3rd inversion (2)",
+        pic:MMin2Miss5,
+        answer:HG
+    },
+    {
+        case: "Mm2 missing 7",
+        name: "Major Minor Septachord, 3rd inversion (2)",
+        pic:MM2Miss7,
+        answer:LBb
+    },
+    {
+        case: "mm2 missing 1",
+        name: "Minor Minor Septachord, 3rd inversion (2)",
+        pic:MinMin2Miss1,
+        answer:HC
+    },
+    {
+        case: "mm2 missing 3",
+        name: "Minor Minor Septachord, 3rd inversion (2)",
+        pic:MMin2Miss3,
+        answer:HEb
+    },
+    {
+        case: "mm2 missing 5",
+        name: "Minor Minor Septachord, 3rd inversion (2)",
+        pic:MinMin2Miss5,
+        answer:HG
+    },
+    {
+        case: "mm2 missing 7",
+        name: "Minor Minor Septachord, 3rd inversion (2)",
+        pic:MinMin2Miss7,
+        answer:LBb
+    },
+    {
+        case: "hdim2 missing 1",
+        name: "Half Diminished Septachord, 3rd inversion (2)",
+        pic:HDim2Miss1,
+        answer:HC
+    },
+    {
+        case: "hdim2 missing 3",
+        name: "Half Diminished Septachord, 3rd inversion (2)",
+        pic:HDim2Miss3,
+        answer:HEb
+    },
+    {
+        case: "hdim2 missing 5",
+        name: "Half Diminished Septachord, 3rd inversion (2)",
+        pic:HDim2Miss5,
+        answer:HGb
+    },
+    {
+        case: "hdim2 missing 7",
+        name: "Half Diminished Septachord, 3rd inversion (2)",
+        pic: HDim2Miss7,
+        answer:LBb
+    },
+    {
+        case: "dim2 missing 1",
+        name: "Fully Diminished Septachord, 3rd inversion (2)",
+        pic:DimDim2Miss1,
+        answer:HC
+    },
+    {
+        case: "dim2 missing 3",
+        name: "Fully Diminished Septachord, 3rd inversion (2)",
+        pic:DimDim2Miss3,
+        answer:HEb
+    },
+    {
+        case: "dim2 missing 5",
+        name: "Fully Diminished Septachord, 3rd inversion (2)",
+        pic:DimDim2Miss5,
+        answer:HGb
+    },
+    {
+        case: "dim2 missing 7",
+        name: "Fully Diminished Septachord, 3rd inversion (2)",
+        pic: HDim2Miss7,
+        answer:LBbb
+    },
     
 
 ];  
@@ -606,6 +891,7 @@ const Build =()=>{
     })
 
     const inversionator=()=>{
+        random2();
         setChoice({root: false, inversion:true} )
     }
 
@@ -639,6 +925,18 @@ const Build =()=>{
           }
       };
 
+      const selected2 = (event) => {
+        if (event.target.src===inverRand.answer) {
+             coAn();
+             random2();
+            console.log("yes")
+        } else {
+            console.log("no");
+            inCoAn()
+        }
+    };
+
+
     return(
         choice.root===false && choice.inversion===false?
         <>
@@ -653,18 +951,22 @@ const Build =()=>{
         <h1>inversion stuff</h1>
         <h4>Please complete the following chord.</h4>
         <div>
-            <p>Chord name: </p> {inverArr[0].name}
+            <p>Chord name: </p> {inverRand.name}
             <br/>
             <br/>
-            <img src={inverArr[0].pic} alt="fifth" />
+            <img src={inverRand.pic} alt="inverted chord with missing note" />
             <h4>Please select the note that would complete the chord</h4>
             <br/>
             {
                 inverChoices.map(item => (
-                    <button ><img src={item} alt="note"/></button>
+                    <button onClick={selected2}><img src={item} alt="note"/></button>
                 ))
             }
         </div>
+        <div>
+        <h1 className="text">Correct Answers: {count.yes}</h1>
+        <h1 className="text">Incorrect Answers: {count.no}</h1>
+      </div>
         </>
         :
         <>

@@ -51,7 +51,9 @@ body {
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    flexDirection: 'row'
+    flexDirection: 'row';
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
 }
 
 .btn-hover:hover {
