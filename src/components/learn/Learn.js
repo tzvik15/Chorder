@@ -114,6 +114,9 @@ const Learn =()=> {
 
 
     return (
+        
+  
+      
         buttons.q1===false?
         <>
         <p className ="info" >
@@ -123,7 +126,7 @@ const Learn =()=> {
         <h3 className ="title">What would you like to learn about?</h3>
         <button className ="btn-hover colorTriads" onClick={tri}>3-note chords ("Triads")</button>
         <button className ="btn-hover colorSept " onClick={sept}>4-note chords ("Septachords")</button>
-
+        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
         </>
         :
         buttons.q1===true && buttons.septa===false && buttons.triads===true && buttons.inversions===false?

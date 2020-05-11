@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 import "./theoryPlay.css";
 import Build from "../build/Build"
 import Recognize from "../recognize/Recognize"
@@ -25,6 +26,7 @@ const TheoryPlay=()=> {
     <h4>Would you like to practice building chords, or recognizing chords?</h4>
         <button onClick={builder}>Build</button>
         <button onClick={recognizer}>Recognize</button>
+        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
         </>
         : build===true?
         <>

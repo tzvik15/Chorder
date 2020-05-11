@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
 import "./soundPlay.css";
 
 import useSound from "use-sound";
@@ -435,7 +436,7 @@ const SoundPlay = () => {
       <button className ="btn-hover color-6" onClick={medium}>intermediate</button>
       <button className ="btn-hover color-8" onClick={advanced}>hard</button>
       <button className ="btn-hover color-7" onClick={hard}>expert</button>
-      
+      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
     </>
   ) : difficulty === "easy" ? (
     <>
@@ -456,6 +457,7 @@ const SoundPlay = () => {
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
+      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
     </>
   ) : difficulty === "medium" ? (
     <>
@@ -527,6 +529,7 @@ const SoundPlay = () => {
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
+      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
     </>
   ) : difficulty === "advanced" ? (
     <>
@@ -538,7 +541,6 @@ const SoundPlay = () => {
         the chord will remain the same.
       </p>
       <button className="jellyS" onClick={aRand.rand3}>SOUND</button>
-      <button className="jellyS"  onClick={log}>log</button>
       <h4 className ="info">options</h4>
       <button className="advancedB majorMajor" onClick={selected3}>Major Major</button>
       <button className="advancedB majorMinor" onClick={selected3}>Major Minor</button>
@@ -549,6 +551,7 @@ const SoundPlay = () => {
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
+      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
     </>
   ) : difficulty === "hard" ? (
     <>
@@ -766,6 +769,7 @@ const SoundPlay = () => {
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
+      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
     </>
   ) : (
     <>
