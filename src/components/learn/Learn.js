@@ -197,24 +197,24 @@ const Learn =()=> {
         <p className ="info">Click the buttons below to listen to the various septachords and inversions.</p>
         <div className="sounds">
             <button className ="btn-hover color-3" onClick={playMM}>MM7</button>
-            <button className ="btn-hover color-1" onClick={playMM56}>MM56</button>
-            <button className ="btn-hover color-3" onClick={playMM34}>MM34</button>
+            <button className ="btn-hover color-1" onClick={playMM56}>MM6/5</button>
+            <button className ="btn-hover color-3" onClick={playMM34}>MM4/3</button>
             <button className ="btn-hover color-1" onClick={playMM2}>MM2</button>
             <button className ="btn-hover color-3" onClick={playMm}>Mm</button>
-            <button className ="btn-hover color-1" onClick={playMm56}>Mm56</button>
-            <button className ="btn-hover color-3" onClick={playMm34}>Mm34</button>
+            <button className ="btn-hover color-1" onClick={playMm56}>Mm6/5</button>
+            <button className ="btn-hover color-3" onClick={playMm34}>Mm4/3</button>
             <button className ="btn-hover color-1" onClick={playMm2}>Mm2</button>
             <button className ="btn-hover color-3" onClick={playmm}>mm</button>
-            <button className ="btn-hover color-1" onClick={playMin56}>mm56</button>
-            <button className ="btn-hover color-3" onClick={playMin34}>mm34</button>
+            <button className ="btn-hover color-1" onClick={playMin56}>mm6/5</button>
+            <button className ="btn-hover color-3" onClick={playMin34}>mm4/3</button>
             <button className ="btn-hover color-1" onClick={playMin2}>mm2</button>
             <button className ="btn-hover color-3" onClick={playhdim}>ø7</button>
-            <button className ="btn-hover color-1" onClick={playhdim56}>ø56</button>
-            <button className ="btn-hover color-3" onClick={playhdim34}>ø34</button>
+            <button className ="btn-hover color-1" onClick={playhdim56}>ø6/5</button>
+            <button className ="btn-hover color-3" onClick={playhdim34}>ø4/3</button>
             <button className ="btn-hover color-1" onClick={playhdim2}>ø2</button>
             <button className ="btn-hover color-3" onClick={playdimdim}>o7</button>
-            <button className ="btn-hover color-1" onClick={playDim56}>o56</button>
-            <button className ="btn-hover color-3" onClick={playDim34}>o34</button>
+            <button className ="btn-hover color-1" onClick={playDim56}>o6/5</button>
+            <button className ="btn-hover color-3" onClick={playDim34}>o4/3</button>
             <button className ="btn-hover color-1" onClick={playDim2}>o2</button>
             
         </div> 
@@ -245,10 +245,10 @@ const Learn =()=> {
             <button className ="btn-hover color-3 " onClick={playmin6}>Minor triad, 1st inversion(m6)</button>
             <button className ="btn-hover color-1" onClick={playAug6}>Augmented triad, 1st inversion(Aug6)</button>
             <button className ="btn-hover color-3 " onClick={playDim6}>Diminished triad, 1st inversion(Dim6)</button>
-            <button className ="btn-hover color-1" onClick={playM46}>Major triad, 2nd inversion (M46)</button>
-            <button className ="btn-hover color-3 " onClick={playmin46}>Minor triad, 2nd inversion (m46)</button>
-            <button className ="btn-hover color-1" onClick={playAug46}>Augmented triad, 2nd inversion (Aug46)</button>
-            <button className ="btn-hover color-3 " onClick={playDim46}>Diminished triad, 2nd inversion (Dim46)</button>
+            <button className ="btn-hover color-1" onClick={playM46}>Major triad, 2nd inversion (M6/4)</button>
+            <button className ="btn-hover color-3 " onClick={playmin46}>Minor triad, 2nd inversion (m6/4)</button>
+            <button className ="btn-hover color-1" onClick={playAug46}>Augmented triad, 2nd inversion (Aug6/4)</button>
+            <button className ="btn-hover color-3 " onClick={playDim46}>Diminished triad, 2nd inversion (Dim6/4)</button>
 
 
         </div>
