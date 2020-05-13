@@ -23,9 +23,9 @@ const TheoryPlay=()=> {
     return (
         build===false && rec===false?
         <>
-    <h4>Would you like to practice building chords, or recognizing chords?</h4>
-        <button onClick={builder}>Build</button>
-        <button onClick={recognizer}>Recognize</button>
+    <h4 className ="info">Would you like to practice building chords, or recognizing chords?</h4>
+        <button className ="btn-hover colorBuild" onClick={builder}>Build</button>
+        <button className ="btn-hover colorRecognize" onClick={recognizer}>Recognize</button>
         <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
         </>
         : build===true?

@@ -941,23 +941,23 @@ const Build =()=>{
     return(
         choice.root===false && choice.inversion===false?
         <>
-        <p>In this section you will be presented with a chord that is missing a note, and the type of chord to be built. Your objective is to select the note that will complete the chord. </p>
-        <h4>Would you like to practice root position chords, or include inversions as well?</h4>
-        <button onClick={rooter}>Root Positions!</button>
-        <button onClick={inversionator}>Inversions!</button>
+        <p className ="info">In this section you will be presented with a chord that is missing a note, and the type of chord to be built. Your objective is to select the note that will complete the chord. </p>
+        <h4 className ="infoOther">Would you like to practice root position chords, or include inversions as well?</h4>
+        <button className ="btn-hover colorRoot"  onClick={rooter}>Root Positions!</button>
+        <button className ="btn-hover colorInversions" onClick={inversionator}>Inversions!</button>
         <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
         </>
         :
         choice.root===false && choice.inversion===true?
         <>
-        <h1>inversion stuff</h1>
-        <h4>Please complete the following chord.</h4>
+        <h1 className ="info">inversion stuff</h1>
+        <h4 className ="info">Please complete the following chord.</h4>
         <div>
-            <p>Chord name: </p> {inverRand.name}
+            <p className ="infoOther">Chord name: </p> {inverRand.name}
             <br/>
             <br/>
             <img src={inverRand.pic} alt="inverted chord with missing note" />
-            <h4>Please select the note that would complete the chord</h4>
+            <h4 className ="info">Please select the note that would complete the chord</h4>
             <br/>
             {
                 inverChoices.map(item => (
@@ -973,14 +973,14 @@ const Build =()=>{
         </>
         :
         <>
-        <h1>root stuff</h1>
-        <h4>Please complete the following chord.</h4>
+        <h1 className ="title">Root Stuff</h1>
+        <h4 className ="info">Please complete the following chord.</h4>
         <div>
-            <p>Chord name: </p> {rootRand.name}
+            <p className ="infoOther">Chord name: </p> {rootRand.name}
             <br/>
             <br/>
             <img src={rootRand.pic} alt="chord with missing note" />
-            <h4>Please select the note that would complete the chord</h4>
+            <h4 className ="info">Please select the note that would complete the chord</h4>
             <br/>
             {
                 rootChoices.map(item => (
