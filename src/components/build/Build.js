@@ -164,7 +164,7 @@ const Build =()=>{
         },
         {
             case: "missing third sept",
-            name:"Half Diminished Septachord",
+            name:"Half-Diminished Septachord",
             pic:hdimMiss3,
             answer:LEb
         },
@@ -194,7 +194,7 @@ const Build =()=>{
         },
         {
             case: "missing fifth sept",
-            name:"Half Diminished Septachord",
+            name:"Half-Diminished Septachord",
             pic:hdimMiss5,
             answer:LGb
         },
@@ -274,7 +274,7 @@ const Build =()=>{
     },
     {
         case: "missing third sept",
-        name:"Half Diminished Septachord root position",
+        name:"Half-Diminished Septachord root position",
         pic:hdimMiss3,
         answer:LEb
     },
@@ -304,7 +304,7 @@ const Build =()=>{
     },
     {
         case: "missing fifth sept",
-        name:"Half Diminished Septachord root position",
+        name:"Half-Diminished Septachord root position",
         pic:hdimMiss5,
         answer:LGb
     },
@@ -496,13 +496,13 @@ const Build =()=>{
     },
     {
         case:"hdim7 missing 1",
-        name:"Half Diminished Septachord root position",
+        name:"Half-Diminished Septachord root position",
         pic:HDimMiss1,
         answer:LC
     },
     {
         case:"hdimm7 missing 7",
-        name:"Half Diminished Septachord root position",
+        name:"Half-Diminished Septachord root position",
         pic:HDimMiss7,
         answer:LBb
     },  
@@ -592,25 +592,25 @@ const Build =()=>{
     },
     {
         case: "hdim56 missing 1",
-        name: "Half Diminished Septachord, 1st inversion (5/6)",
+        name: "Half-Diminished Septachord, 1st inversion (5/6)",
         pic:HDim56Miss1,
         answer:HC
     },
     {
         case: "hdim56 missing 3",
-        name: "Half Diminished Septachord, 1st inversion (5/6)",
+        name: "Half-Diminished Septachord, 1st inversion (5/6)",
         pic:HDim56Miss3,
         answer:LEb
     },
     {
         case: "hdim56 missing 5",
-        name: "Half Diminished Septachord, 1st inversion (5/6)",
+        name: "Half-Diminished Septachord, 1st inversion (5/6)",
         pic:HDim56Miss5,
         answer:LGb
     },
     {
         case: "hdim56 missing 7",
-        name: "Half Diminished Septachord, 1st inversion (5/6)",
+        name: "Half-Diminished Septachord, 1st inversion (5/6)",
         pic: Dim56Miss7,
         answer:LBb
     },
@@ -712,25 +712,25 @@ const Build =()=>{
     },
     {
         case: "hdim34 missing 1",
-        name: "Half Diminished Septachord, 2nd inversion (3/4)",
+        name: "Half-Diminished Septachord, 2nd inversion (3/4)",
         pic:HDim34Miss1,
         answer:HC
     },
     {
         case: "hdim34 missing 3",
-        name: "Half Diminished Septachord, 2nd inversion (3/4)",
+        name: "Half-Diminished Septachord, 2nd inversion (3/4)",
         pic:HDim34Miss3,
         answer:HEb
     },
     {
         case: "hdim34 missing 5",
-        name: "Half Diminished Septachord, 2nd inversion (3/4)",
+        name: "Half-Diminished Septachord, 2nd inversion (3/4)",
         pic:HDim34Miss5,
         answer:LGb
     },
     {
         case: "hdim34 missing 7",
-        name: "Half Diminished Septachord, 2nd inversion (3/4)",
+        name: "Half-Diminished Septachord, 2nd inversion (3/4)",
         pic: HDim34Miss7,
         answer:LBb
     },
@@ -832,25 +832,25 @@ const Build =()=>{
     },
     {
         case: "hdim2 missing 1",
-        name: "Half Diminished Septachord, 3rd inversion (2)",
+        name: "Half-Diminished Septachord, 3rd inversion (2)",
         pic:HDim2Miss1,
         answer:HC
     },
     {
         case: "hdim2 missing 3",
-        name: "Half Diminished Septachord, 3rd inversion (2)",
+        name: "Half-Diminished Septachord, 3rd inversion (2)",
         pic:HDim2Miss3,
         answer:HEb
     },
     {
         case: "hdim2 missing 5",
-        name: "Half Diminished Septachord, 3rd inversion (2)",
+        name: "Half-Diminished Septachord, 3rd inversion (2)",
         pic:HDim2Miss5,
         answer:HGb
     },
     {
         case: "hdim2 missing 7",
-        name: "Half Diminished Septachord, 3rd inversion (2)",
+        name: "Half-Diminished Septachord, 3rd inversion (2)",
         pic: HDim2Miss7,
         answer:LBb
     },

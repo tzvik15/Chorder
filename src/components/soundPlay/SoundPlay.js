@@ -247,7 +247,7 @@ const SoundPlay = () => {
         setCorrect("Minor Minor");
         break;
       case playhdim:
-        setCorrect("Half Diminished");
+        setCorrect("Half-Diminished");
         break;
       case playdimdim:
         setCorrect("Fully Diminished");
@@ -305,7 +305,7 @@ const SoundPlay = () => {
         setCorrect("Minor Minor septachord - root position");
         break;
       case playhdim:
-        setCorrect("Half Diminished septachord - root position");
+        setCorrect("Half-Diminished septachord - root position");
         break;
       case playdimdim:
         setCorrect("Fully Diminished septachord - root position");
@@ -338,13 +338,13 @@ const SoundPlay = () => {
         setCorrect("Minor Minor septachord - 3rd inversion(2)");
         break;
       case playhdim56:
-        setCorrect("Half Diminished septachord - 1st inversion(6/5)");
+        setCorrect("Half-Diminished septachord - 1st inversion(6/5)");
         break;
       case playhdim34:
-        setCorrect("Half Diminished septachord - 2nd inversion(4/3)");
+        setCorrect("Half-Diminished septachord - 2nd inversion(4/3)");
         break;
       case playhdim2:
-        setCorrect("Half Diminished septachord - 3rd inversion(2)");
+        setCorrect("Half-Diminished septachord - 3rd inversion(2)");
         break;
       case playDim56:
         setCorrect("Fully Diminished septachord - 1st inversion(6/5)");
@@ -545,7 +545,7 @@ const SoundPlay = () => {
       <button className="advancedB majorMajor" onClick={selected3}>Major Major</button>
       <button className="advancedB majorMinor" onClick={selected3}>Major Minor</button>
       <button className="advancedB minorMinor" onClick={selected3}>Minor Minor</button>
-      <button className="advancedB halfDiminished" onClick={selected3}>Half Diminished</button>
+      <button className="advancedB halfDiminished" onClick={selected3}>Half-Diminished</button>
       <button className="advancedB fullyDiminished" onClick={selected3}>Fully Diminished</button>
       <div>
         <h1 className="text">Correct Answers: {count.yes}</h1>
@@ -715,24 +715,24 @@ const SoundPlay = () => {
           <td>
             {" "}
             <button className="hardB halfDiminished" onClick={selected4}>
-              Half Diminished septachord - root position
+              Half-Diminished septachord - root position
             </button>
           </td>
           <td>
             <button className="hardB halfDiminished"  onClick={selected4}>
-              Half Diminished septachord - 1st inversion(6/5)
-            </button>
-          </td>
-          <td>
-            {" "}
-            <button className="hardB halfDiminished"  onClick={selected4}>
-              Half Diminished septachord - 2nd inversion(4/3)
+              Half-Diminished septachord - 1st inversion(6/5)
             </button>
           </td>
           <td>
             {" "}
             <button className="hardB halfDiminished"  onClick={selected4}>
-              Half Diminished septachord - 3rd inversion(2)
+              Half-Diminished septachord - 2nd inversion(4/3)
+            </button>
+          </td>
+          <td>
+            {" "}
+            <button className="hardB halfDiminished"  onClick={selected4}>
+              Half-Diminished septachord - 3rd inversion(2)
             </button>
           </td>
         </tr>

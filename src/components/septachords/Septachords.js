@@ -87,19 +87,19 @@ const Septachords =()=>{
         },
 
         {
-            name:"Half Diminished Septachord, root position",
+            name:"Half-Diminished Septachord, root position",
             pic:HDim
         },
         {
-            name:"Half Diminished Septachord, 1st inversion (6/5)",
+            name:"Half-Diminished Septachord, 1st inversion (6/5)",
             pic:HDim56
         },  
         {
-            name:"Half Diminished Septachord, 2nd inversion (4/3)",
+            name:"Half-Diminished Septachord, 2nd inversion (4/3)",
             pic:HDim34
         },
         {
-            name:"Half Diminished Septachord, 3rd inversion (2)",
+            name:"Half-Diminished Septachord, 3rd inversion (2)",
             pic:HDim2
         },
 
