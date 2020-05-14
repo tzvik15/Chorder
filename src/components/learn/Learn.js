@@ -126,7 +126,7 @@ const Learn =()=> {
         <h3 className ="title">What would you like to learn about?</h3>
         <button className ="btn-hover colorTriads" onClick={tri}>3-note chords ("Triads")</button>
         <button className ="btn-hover colorSept " onClick={sept}>4-note chords ("Septachords")</button>
-        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         buttons.q1===true && buttons.septa===false && buttons.triads===true && buttons.inversions===false?
@@ -150,7 +150,7 @@ const Learn =()=> {
         </div>
         <button className ="btn-hover colorInver " onClick={inv}>Inversions</button>
         <button className ="btn-hover colorSept " onClick={sept}>Septachords</button>
-        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         buttons.q1===true && buttons.triads===false && buttons.septa===true && buttons.inversions===false?
@@ -180,7 +180,7 @@ const Learn =()=> {
         </div>  
         <button className ="btn-hover colorInver " onClick={inv}>Inversions</button>
         <button className ="btn-hover colorTriads" onClick={tri}>Triads</button>
-        <button className ="btn-hover colorHome " > <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         buttons.q1===true && buttons.triads===false && buttons.septa===true && buttons.inversions===true?
@@ -219,7 +219,7 @@ const Learn =()=> {
             
         </div> 
         <button className ="btn-hover colorTriads" onClick={tri}>Triads</button>
-        <button className ="btn-hover colorHome  " > <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         buttons.q1===true && buttons.triads===true && buttons.septa===false && buttons.inversions===true?
@@ -253,7 +253,7 @@ const Learn =()=> {
 
         </div>
         <button className ="btn-hover colorSept" onClick={sept}>Septachords</button>
-        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         <>

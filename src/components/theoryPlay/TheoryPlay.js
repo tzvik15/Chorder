@@ -26,7 +26,7 @@ const TheoryPlay=()=> {
     <h4 className ="info">Would you like to practice building chords, or recognizing chords?</h4>
         <button className ="btn-hover colorBuild" onClick={builder}>Build</button>
         <button className ="btn-hover colorRecognize" onClick={recognizer}>Recognize</button>
-        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         : build===true?
         <>

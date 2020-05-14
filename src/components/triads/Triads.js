@@ -118,7 +118,7 @@ const Triads =()=>{
         <p>In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
         <h4>Ready?</h4>
         <button onClick={go}>READY</button>
-        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         <>
@@ -139,7 +139,7 @@ const Triads =()=>{
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
-      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
     )
 }

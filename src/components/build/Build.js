@@ -945,7 +945,7 @@ const Build =()=>{
         <h4 className ="infoOther">Would you like to practice root position chords, or include inversions as well?</h4>
         <button className ="btn-hover colorRoot"  onClick={rooter}>Root Positions!</button>
         <button className ="btn-hover colorInversions" onClick={inversionator}>Inversions!</button>
-        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         choice.root===false && choice.inversion===true?
@@ -969,7 +969,7 @@ const Build =()=>{
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
-      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         <>
@@ -992,7 +992,7 @@ const Build =()=>{
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
-      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
     )
 }

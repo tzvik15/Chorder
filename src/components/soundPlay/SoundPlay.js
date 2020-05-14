@@ -436,7 +436,7 @@ const SoundPlay = () => {
       <button className ="btn-hover color-6" onClick={medium}>intermediate</button>
       <button className ="btn-hover color-8" onClick={advanced}>hard</button>
       <button className ="btn-hover color-7" onClick={hard}>expert</button>
-      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
     </>
   ) : difficulty === "easy" ? (
     <>
@@ -457,7 +457,7 @@ const SoundPlay = () => {
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
-      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
     </>
   ) : difficulty === "medium" ? (
     <>
@@ -529,7 +529,7 @@ const SoundPlay = () => {
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
-      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
     </>
   ) : difficulty === "advanced" ? (
     <>
@@ -551,7 +551,7 @@ const SoundPlay = () => {
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
-      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
     </>
   ) : difficulty === "hard" ? (
     <>
@@ -769,7 +769,7 @@ const SoundPlay = () => {
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>
-      <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
     </>
   ) : (
     <>

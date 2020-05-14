@@ -31,7 +31,7 @@ const Play =()=> {
         <h4 className ="title">Would you like to play with sounds or with theory?</h4>
         <button className ="btn-hover colorSound"  onClick={sound}>Sounds</button>
         <button className ="btn-hover colorTheory"  onClick={theory}>Theory</button>
-        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         gameChoice.choice===true && gameChoice.sound===false ?

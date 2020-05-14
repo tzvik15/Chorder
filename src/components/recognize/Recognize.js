@@ -28,7 +28,7 @@ const Recognize =()=>{
         <h4>Would you like to play with Triads or Septachords?</h4>
         <button onClick={triads}>Triads</button>
         <button onClick={septachords}>Septachords</button>
-        <button className ="btn-hover colorHome  "> <Link to="/">HOME!</Link></button>
+        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         choice.triads===true?
