@@ -146,7 +146,7 @@ const Triads =()=>{
         <div>
         {
                 imageArr.map(item => (
-                    <button onClick={selected} className={item.class}>{item.name}className={item.class}</button>
+                    <button onClick={selected} className={item.class}>{item.name}</button>
                 ))
             }
             </div>
