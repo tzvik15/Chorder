@@ -25,10 +25,10 @@ const Recognize =()=>{
     return(
         choice.triads===false && choice.septachords===false?
         <>
-        <h4>Would you like to play with Triads or Septachords?</h4>
-        <button onClick={triads}>Triads</button>
-        <button onClick={septachords}>Septachords</button>
-        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+        <h4 className ="info" >Would you like to play with Triads or Septachords?</h4>
+        <button className ="btn-hover colorTriads" onClick={triads}>Triads</button>
+        <button className ="btn-hover colorSept" onClick={septachords}>Septachords</button>
+        <Link to="/"><button className ="btn-hover colorHome"> HOME!</button></Link>
         </>
         :
         choice.triads===true?

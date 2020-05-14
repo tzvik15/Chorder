@@ -55,3 +55,9 @@
     background-image: linear-gradient(to right, #e2405b, #b31e92, #6B8DD6, #8E37D7);
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
+
+
+.picSize{
+    height: 390px;
+    width: 105px;
+}

@@ -950,7 +950,7 @@ const Build =()=>{
         :
         choice.root===false && choice.inversion===true?
         <>
-        <h1 className ="info">inversion stuff</h1>
+        <h1 className ="title">Inversion Stuff</h1>
         <h4 className ="info">Please complete the following chord.</h4>
         <div>
             <p className ="infoOther">Chord name: </p> {inverRand.name}

@@ -37,87 +37,107 @@ const Septachords =()=>{
     const imageArr =[
         {
             name:"Major Major Septachord, root position",
-            pic:MM
+            pic:MM,
+            class:"majorMajor"
         },
         {
             name:"Major Major Septachord, 1st inversion (6/5)",
-            pic:MM56
+            pic:MM56,
+            class:"majorMajor"
         },  
         {
             name:"Major Major Septachord, 2nd inversion (4/3)",
-            pic:MM34
+            pic:MM34,
+            class:"majorMajor"
         },
         {
             name:"Major Major Septachord, 3rd inversion (2)",
-            pic:MM2
+            pic:MM2,
+            class:"majorMajor"
         },
         
         {
             name:"Major Minor Septachord, root position",
-            pic:MMin
+            pic:MMin,
+            class:"majorMinor"
         },
         {
             name:"Major Minor Septachord, 1st inversion (6/5)",
-            pic:MMin56
+            pic:MMin56,
+            class:"majorMinor"
         },  
         {
             name:"Major Minor Septachord, 2nd inversion (4/3)",
-            pic:MMin34
+            pic:MMin34,
+            class:"majorMinor"
         },
         {
             name:"Major Minor Septachord, 3rd inversion (2)",
-            pic:MMin2
+            pic:MMin2,
+            class:"majorMinor"
         },
 
         {
             name:"Minor Minor Septachord, root position",
-            pic:MinMin
+            pic:MinMin,
+            class:"minorMinor"
         },
         {
             name:"Minor Minor Septachord, 1st inversion (6/5)",
-            pic:MinMin56
+            pic:MinMin56,
+            class:"minorMinor"
         },  
         {
             name:"Minor Minor Septachord, 2nd inversion (4/2)",
-            pic:MinMin34
+            pic:MinMin34,
+            class:"minorMinor"
         },
         {
             name:"Minor Minor Septachord, 3rd inversion (2)",
-            pic:MinMin2
+            pic:MinMin2,
+            class:"minorMinor"
         },
 
         {
             name:"Half-Diminished Septachord, root position",
-            pic:HDim
+            pic:HDim,
+            class:"halfDiminished"
         },
         {
             name:"Half-Diminished Septachord, 1st inversion (6/5)",
-            pic:HDim56
+            pic:HDim56,
+            class:"halfDiminished"
         },  
         {
             name:"Half-Diminished Septachord, 2nd inversion (4/3)",
-            pic:HDim34
+            pic:HDim34,
+            class:"halfDiminished"
         },
         {
             name:"Half-Diminished Septachord, 3rd inversion (2)",
-            pic:HDim2
+            pic:HDim2,
+            class:"halfDiminished"
         },
 
         {
             name:"Fully Diminished Septachord, root position",
-            pic:DimDim
+            pic:DimDim,
+            class:"fullyDiminished"
         },
         {
             name:"Fully Diminished Septachord, 1st inversion (6/5)",
-            pic:DimDim56
+            pic:DimDim56,
+            class:"fullyDiminished"
         },  
         {
             name:"Fully Diminished Septachord, 2nd inversion (4/3)",
-            pic:DimDim34
+            pic:DimDim34,
+            class:"fullyDiminished"
         },
         {
             name:"Fully Diminished Septachord, 3rd inversion (2)",
-            pic:DimDim2
+            pic:DimDim2,
+            class:"fullyDiminished"
         },
     ]
 
@@ -159,15 +179,15 @@ const Septachords =()=>{
     return (
         start===false?
         <>
-        <h2>Septachord Recognition</h2>
-        <p>In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
-        <h4>Ready?</h4>
-        <button onClick={go}>READY</button>
+        <h2 className = "title">Septachord Recognition</h2>
+        <p className ="info" >In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
+        <h4 className ="infoOther">Ready?</h4>
+        <button className ="btn-hover colorReady" onClick={go}>READY</button>
         <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
         </>
         :
         <>
-        <h4>What chord is this?</h4>
+        <h4 className ="info">What chord is this?</h4>
         <div>
         <img src={item.pic} alt={"a chord"}></img>
         </div>
@@ -176,7 +196,7 @@ const Septachords =()=>{
         <div>
         {
                 imageArr.map(item => (
-                    <button onClick={selected}>{item.name}</button>
+                    <button onClick={selected} className={item.class}>{item.name}</button>
                 ))
             }
             </div>

@@ -24,55 +24,70 @@ const Triads =()=>{
         setStart(true)
     }
 
+  
 
     const imageArr =[
         {
-            name:"Major Triad, root position",
-            pic:M
+            name:"Major Triad, root position,  ",
+            pic:M,
+            class:"majorTriad",
         },
+        
         {
             name:"Major Triad, 1st inversion (6)",
-            pic:M6
+            pic:M6,
+            class:"majorTriad",
         },  
         {
             name:"Major Triad, 2nd inversion (6/4)",
-            pic:M46
+            pic:M46,
+            class:"majorTriad",
         },
         {
             name:"Minor Triad, root position",
-            pic:Min
+            pic:Min,
+            class:"minorTriad",
         },
         {
             name:"Minor Triad, 1st inversion (6)",
-            pic:Min6
+            pic:Min6,
+            class:"minorTriad",
         },  
         {
             name:"Minor Triad, 2nd inversion (6/4)",
-            pic:Min46
+            pic:Min46,
+            class:"minorTriad",
         },  
         {
             name:"Diminished Triad, root position",
-            pic:Dim
+            pic:Dim,
+            class:"diminidhedTriad",
         },
         {
             name:"Diminished Triad, 1st inversion (6)",
-            pic:Dim6
+            pic:Dim6,
+            class:"diminidhedTriad",
         },  
         {
             name:"Diminished Triad, 2nd inversion (6/4)",
-            pic:Dim46
+            pic:Dim46,
+            class:"diminidhedTriad",
         }, 
         {
             name:"Augmented Triad, root position",
-            pic:Aug
+            pic:Aug,
+            class:"augmentedTriad",
         },
         {
             name:"Augmented Triad, 1st inversion (6)",
-            pic:Aug6
+            pic:Aug6,
+            class:"augmentedTriad",
+            
         },  
         {
             name:"Augmented Triad, 2nd inversion (6/4)",
-            pic:Aug46
+            pic:Aug46,
+            class:"augmentedTriad",
         }
     ]
 
@@ -114,15 +129,15 @@ const Triads =()=>{
     return (
         start===false?
         <>
-        <h2>Triad Recognition</h2>
-        <p>In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
-        <h4>Ready?</h4>
-        <button onClick={go}>READY</button>
-        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+        <h2 className ="title">Triad Recognition</h2>
+        <p className ="info">In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
+        <h4 className ="infoOther">Ready?</h4>
+        <button className ="btn-hover colorReady" onClick={go}>READY</button>
+        <Link to="/"><button className ="btn-hover colorHome"> HOME!</button></Link>
         </>
         :
         <>
-        <h4>What chord is this?</h4>
+        <h4 className ="info">What chord is this?</h4>
         <div>
         <img src={item.pic} alt={"a chord"}></img>
         </div>
@@ -131,7 +146,7 @@ const Triads =()=>{
         <div>
         {
                 imageArr.map(item => (
-                    <button onClick={selected}>{item.name}</button>
+                    <button onClick={selected} className={item.class}>{item.name}className={item.class}</button>
                 ))
             }
             </div>

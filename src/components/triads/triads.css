@@ -1,0 +1,66 @@
+.button{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10%;
+    text-align: center
+}
+
+
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    position: relative;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.colorReady {
+    background-image: linear-gradient(to right, #8625e1, #40dd2b, #ae5ec2, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.majorTriad, .minorTriad, .diminidhedTriad, .augmentedTriad{
+flex: 1 1 auto;
+margin: 10px;
+padding: 30px;
+text-align: center;
+transition: 0.5s;
+background-size: 200% auto;
+color: rgb(0, 0, 0);
+/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+}
+
+.hardB:hover {
+background-position: right center; /* change the direction of the change here */
+}
+
+
+
+
