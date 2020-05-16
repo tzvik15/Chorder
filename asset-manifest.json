@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Chorder/static/css/main.7bb69c75.chunk.css",
-    "main.js": "/Chorder/static/js/main.ba2094f7.chunk.js",
-    "main.js.map": "/Chorder/static/js/main.ba2094f7.chunk.js.map",
-    "runtime-main.js": "/Chorder/static/js/runtime-main.5b2a755d.js",
-    "runtime-main.js.map": "/Chorder/static/js/runtime-main.5b2a755d.js.map",
-    "static/js/2.db71ce94.chunk.js": "/Chorder/static/js/2.db71ce94.chunk.js",
-    "static/js/2.db71ce94.chunk.js.map": "/Chorder/static/js/2.db71ce94.chunk.js.map",
-    "static/js/3.89cdd73b.chunk.js": "/Chorder/static/js/3.89cdd73b.chunk.js",
-    "static/js/3.89cdd73b.chunk.js.map": "/Chorder/static/js/3.89cdd73b.chunk.js.map",
+    "main.css": "/Chorder/static/css/main.0cba6bb6.chunk.css",
+    "main.js": "/Chorder/static/js/main.693ca07d.chunk.js",
+    "main.js.map": "/Chorder/static/js/main.693ca07d.chunk.js.map",
+    "runtime-main.js": "/Chorder/static/js/runtime-main.15122548.js",
+    "runtime-main.js.map": "/Chorder/static/js/runtime-main.15122548.js.map",
+    "static/js/2.a95b7e28.chunk.js": "/Chorder/static/js/2.a95b7e28.chunk.js",
+    "static/js/2.a95b7e28.chunk.js.map": "/Chorder/static/js/2.a95b7e28.chunk.js.map",
+    "static/js/3.ec89e0c5.chunk.js": "/Chorder/static/js/3.ec89e0c5.chunk.js",
+    "static/js/3.ec89e0c5.chunk.js.map": "/Chorder/static/js/3.ec89e0c5.chunk.js.map",
     "index.html": "/Chorder/index.html",
-    "precache-manifest.c406adb9fc89f3fb8d49229edb35612d.js": "/Chorder/precache-manifest.c406adb9fc89f3fb8d49229edb35612d.js",
+    "precache-manifest.585cd35919a5a218cea22e32c84a9168.js": "/Chorder/precache-manifest.585cd35919a5a218cea22e32c84a9168.js",
     "service-worker.js": "/Chorder/service-worker.js",
-    "static/css/main.7bb69c75.chunk.css.map": "/Chorder/static/css/main.7bb69c75.chunk.css.map",
-    "static/js/2.db71ce94.chunk.js.LICENSE.txt": "/Chorder/static/js/2.db71ce94.chunk.js.LICENSE.txt",
-    "static/js/3.89cdd73b.chunk.js.LICENSE.txt": "/Chorder/static/js/3.89cdd73b.chunk.js.LICENSE.txt",
+    "static/css/main.0cba6bb6.chunk.css.map": "/Chorder/static/css/main.0cba6bb6.chunk.css.map",
+    "static/js/2.a95b7e28.chunk.js.LICENSE.txt": "/Chorder/static/js/2.a95b7e28.chunk.js.LICENSE.txt",
+    "static/js/3.ec89e0c5.chunk.js.LICENSE.txt": "/Chorder/static/js/3.ec89e0c5.chunk.js.LICENSE.txt",
     "static/media/3-4.jpg": "/Chorder/static/media/3-4.5ce16d08.jpg",
     "static/media/4-2.jpg": "/Chorder/static/media/4-2.0791f9b7.jpg",
     "static/media/5-6.jpg": "/Chorder/static/media/5-6.63a56292.jpg",
@@ -50,12 +50,12 @@
     "static/media/minmin56.wav": "/Chorder/static/media/minmin56.afc41efc.wav",
     "static/media/minmin7.wav": "/Chorder/static/media/minmin7.1acf326e.wav",
     "static/media/minor.wav": "/Chorder/static/media/minor.71d58820.wav",
-    "static/media/start.css": "/Chorder/static/media/rainNotes.070550aa.gif"
+    "static/media/start.css": "/Chorder/static/media/start3.042ebceb.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.5b2a755d.js",
-    "static/js/2.db71ce94.chunk.js",
-    "static/css/main.7bb69c75.chunk.css",
-    "static/js/main.ba2094f7.chunk.js"
+    "static/js/runtime-main.15122548.js",
+    "static/js/2.a95b7e28.chunk.js",
+    "static/css/main.0cba6bb6.chunk.css",
+    "static/js/main.693ca07d.chunk.js"
   ]
 }
