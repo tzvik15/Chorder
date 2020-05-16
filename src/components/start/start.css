@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  /* background-image: url('../../assets/images/rainNotes.gif'); */
+  background-image: url('../../assets/images/start3.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -8,6 +8,10 @@ body {
   background-size: 1600px 770px;
   text-align: center;
   background-color: rgb(134, 131, 131);
+}
+
+.infoOther{
+  color: red
 }
 
 .hAndW {

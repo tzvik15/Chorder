@@ -961,7 +961,7 @@ const Build =()=>{
             <br/>
             {
                 inverChoices.map(item => (
-                    <button onClick={selected2}><img src={item} alt="note"/></button>
+                    <button onClick={selected2} className="noteBtn"><img className="imgBtn" src={item} alt="note"/></button>
                 ))
             }
         </div>
@@ -984,7 +984,7 @@ const Build =()=>{
             <br/>
             {
                 rootChoices.map(item => (
-                    <button onClick={selected1}><img src={item} alt="note"/></button>
+                    <button onClick={selected1} className="noteBtn"><img className="imgBtn" src={item} alt="note"/></button>
                 ))
             }
         </div>
