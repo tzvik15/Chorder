@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1f00752e9cc57c3c60548b277e6380f7",
+    "revision": "2d36e873acb4889341a13e744fde233c",
     "url": "/Chorder/index.html"
   },
   {
-    "revision": "6e52046c7b47c3568075",
+    "revision": "8dc9e29d03dacdf39c4e",
     "url": "/Chorder/static/css/main.0cba6bb6.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Chorder/static/js/3.ec89e0c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6e52046c7b47c3568075",
-    "url": "/Chorder/static/js/main.693ca07d.chunk.js"
+    "revision": "8dc9e29d03dacdf39c4e",
+    "url": "/Chorder/static/js/main.05c0b2aa.chunk.js"
   },
   {
     "revision": "325d26f969829d6ad693",
