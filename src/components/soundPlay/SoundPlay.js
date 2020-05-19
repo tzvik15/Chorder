@@ -272,7 +272,7 @@ const SoundPlay = () => {
         setCorrect("Augmented triad - root position");
         break;
       case playM6:
-        setCorrect("Major triad - 1st inverstion(6)");
+        setCorrect("Major triad - 1st inversion(6)");
         break;
       case playM46:
         setCorrect("Major triad - 2nd inversion(4/6)");
@@ -433,9 +433,9 @@ const SoundPlay = () => {
     <>
       <h4 className ="title">Please select the difficulty level</h4>
       <button className ="btn-hover color-2" onClick={easy}>Easy</button>
-      <button className ="btn-hover color-6" onClick={medium}>intermediate</button>
-      <button className ="btn-hover color-8" onClick={advanced}>hard</button>
-      <button className ="btn-hover color-7" onClick={hard}>expert</button>
+      <button className ="btn-hover color-6" onClick={medium}>Intermediate</button>
+      <button className ="btn-hover color-8" onClick={advanced}>Hard</button>
+      <button className ="btn-hover color-7" onClick={hard}>Expert</button>
       <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
     </>
   ) : difficulty === "easy" ? (
